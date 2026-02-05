@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@layer utilities{
+    .naranja {
+        color: #E85D04;
+    }
+    .verde-olivo {
+        color: #5C6B2F;
+    }
+    .gris-claro {
+        color: #F5F5F5;
+    }
+    .verde-olivo-claro {
+        color:  #7A8B4A;
+    }
+    .naranja-claro {
+        color: #F48C06;
+    }
+    .bg-gris-claro {
+        background-color: #F5F5F5;
+    }
+    .bg-verde-olivo {
+        background-color: #5C6B2F ;
+    }
+    .bg-naranja {
+        background-color: #E85D04;
+    }
+}
+
