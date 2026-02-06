@@ -2,7 +2,7 @@ const Diferenciador = () => {
   return (
     <article className="bg-gray-100 py-24">
         <h2 className="verde-olivo text-[40px] font-bold text-center">Nuestro Diferenciador</h2>
-        <section className="max-w-7xl mx-auto px-6 py-16">
+        <section className="max-w-7xl mx-auto px-6 py-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 {/* Card 1 */}
