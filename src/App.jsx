@@ -1,6 +1,7 @@
 import Header from "./Components/Header"
 import CTA_Final from "./Seccions/CTA_Final"
 import Diferenciador from "./Seccions/Diferenciador"
+import Footer from "./Components/Footer"
 import Hero from "./Seccions/Hero"
 import NuestroServicios from "./Seccions/NuestroServicios"
 import ResultadosRecientes from "./Seccions/ResultadosRecientes"
@@ -10,7 +11,6 @@ function App() {
 
   return (
     <>
-    
     <Header/>
     <Hero/>
     <Diferenciador/>
@@ -18,6 +18,7 @@ function App() {
     <S7ptimo/>
     <ResultadosRecientes/>
     <CTA_Final/>
+    <Footer/>
     </>
   )
 }
