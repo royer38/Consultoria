@@ -24,4 +24,7 @@
     .bg-naranja {
         background-color: #E85D04;
     }
+    .bg-naranja-oscuro:hover {
+        background-color: #D45103;
+    }
 }
