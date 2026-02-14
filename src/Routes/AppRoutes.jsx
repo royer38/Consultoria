@@ -5,6 +5,7 @@ import Footer from "../Components/Footer"
 import MainLayout from "../Layouts/MainLayout"
 import Contacto from "../Pages/Contacto"
 import NuestroEquipo from "../Pages/NuestroEquipo"
+import S7ptimo_P from "../Pages/S7ptimo_P"
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Home/>}/>
         <Route path="/Contacto" element={<Contacto/>}/>
         <Route path="/NuestroEquipo" element={<NuestroEquipo/>}/>
+        <Route path="/S7PTIMO" element={<S7ptimo_P/>}/>
         
         {/* error 404 */}
         <Route path="*" element={<h1>404 - Pagina no encontrada</h1>}/>
