@@ -203,6 +203,42 @@ const S7ptimo_P = () => {
                 </div>
             </div>
 
+            <div className="bg-verde-olivo flex flex-col gap-5 py-15 max-w-6xl rounded-xl mx-auto mt-13">
+                <p className="text-center font-bold text-white text-[28.8px]">Suscríbete a Nuestro Calendario</p>
+                <p className="text-center text-white text-[17.6px]">Recibe notificaciones de estrenos, funciones especiales y eventos exclusivos</p>
+                <form className="flex flex-col md:flex-row gap-5 mx-auto" action="">
+                    <input className="bg-white rounded py-3 px-3 w-90 placeholder:text-left border-0 focus:outline-none focus:ring-0" type="email" name="Correo" id="Correo" placeholder="Tu correo electrónico"/>
+                    <button className="bg-naranja py-3 px-8 text-white font-bold rounded hover:cursor-pointer">Suscribirme</button>
+                </form>
+            </div>
+
+        </section>
+
+        <section className="py-24">
+            <div className="flex flex-col max-w-6xl mx-auto gap-8">
+                <h2 className="verde-olivo font-bold text-[35.2px] text-center">¿Quieres Presentar tu Obra en S7PTIMO?</h2>
+                <p className="text-[18.4px] text-center">Estamos siempre en búsqueda de propuestas escénicas contemporáneas que desafíen, cuestionen y emocionen. Si tu compañía o colectivo tiene un proyecto que resuena con nuestra línea curatorial, nos encantaría conocerlo.</p>
+            </div>
+
+            <div className="flex flex-col max-w-4xl mx-auto bg-gray-100 p-8 rounded-xl mt-8 gap-8">
+                <h3 className="verde-olivo font-bold text-[22.4px]">Criterios de Selección</h3>
+                <ul className="list-['✓'] pl-6 marker:text-[#E85D04] marker:font-bold text-gray-700 flex flex-col gap-4">
+                    <li>Propuestas escénicas contemporáneas (teatro, danza, performance, híbridos)</li>
+                    <li>Rigor artístico y calidad técnica</li>
+                    <li>Obras que dialoguen con problemáticas actuales</li>
+                    <li>Formato adaptable al espacio de La Titería</li>
+                    <li>Compañías profesionales con trayectoria comprobable</li>
+                    <li>Disponibilidad para temporadas de mínimo 4 funciones</li>
+                </ul>
+            </div>
+
+            <div className="flex flex-col max-w-4xl mx-auto gap-8 items-center">
+                <div className="flex flex-row max-w-4xl mx-auto text-[18.4px] mt-8">
+                    <p><span className="font-bold">Proceso: </span><span>Recibimos propuestas de forma continua. El equipo curatorial revisa todas las solicitudes y contacta a los proyectos seleccionados para seguimiento y programación.</span></p>
+                </div>
+                <button className="text-white font-bold bg-naranja rounded py-4 px-10 max-w-60 bg-naranja-oscuro hover:-translate-y-1 transition duration-300">Enviar Propuesta</button>
+            </div>
+
         </section>
 
     </article>
