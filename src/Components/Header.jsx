@@ -30,7 +30,7 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-10">
           <ul className="flex gap-10 verde-olivo">
             <li><NavLink to="/" className={linkClass}>Inicio</NavLink></li>
-            <li><a href="#">Servicios</a></li>
+            <li><NavLink to="/Servicios" className={linkClass} >Servicios</NavLink></li>
             <li><NavLink to="/S7PTIMO" className={linkClass}>S7PTIMO</NavLink></li>
             <li><NavLink to="/NuestroEquipo" className={linkClass}>Equipo</NavLink></li>
             <li><NavLink to="/Contacto" className={linkClass}>Contacto</NavLink></li>
@@ -48,7 +48,7 @@ const Header = () => {
           <div className="fixed inset-0 bg-verde-olivo flex flex-col items-center justify-center gap-10 md:hidden">
             <ul className="flex flex-col gap-8 text-2xl text-white font-semibold text-center">
               <li><NavLink to="/" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Inicio</NavLink></li>
-              <li><a href="#" onClick={() => setMenuOpen(false)}>Servicios</a></li>
+              <li><NavLink to="/Servicios" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Servicios</NavLink></li>
               <li><NavLink to="/S7PTIMO" className={linkClassMobile} onClick={() => setMenuOpen(false)}>S7PTIMO</NavLink></li>
               <li><NavLink to="/NuestroEquipo" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Equipo</NavLink></li>
               <li><NavLink to="/Contacto" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Contacto</NavLink></li>

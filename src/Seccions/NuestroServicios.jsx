@@ -15,7 +15,7 @@ const NuestroServicios = () => {
           <h3 className="verde-olivo font-bold text-2xl leading-snug mb-6">Asesoría Personalizada para Artistas</h3>
           <p className="text-gray-700 leading-relaxed mb-10">Acompañamiento integral en diseño, desarrollo y postulación de proyectos a convocatorias públicas y privadas.</p>
           <button className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
-          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white">Ver más</button>
+          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</button>
         </article>
 
         <article className="bg-white rounded-2xl p-10 h-full border-2 border-[#F5F5F5] hover:border-[#E85D04] transition-all duration-300 hover:-translate-y-1">
@@ -23,7 +23,7 @@ const NuestroServicios = () => {
           <h3 className="verde-olivo font-bold text-2xl leading-snug mb-6">Mentoría de Movilidad Internacional</h3>
           <p className="text-gray-700 leading-relaxed mb-10">Programa intensivo para ampliar circulación nacional e internacional. Vinculación con festivales y redes de programación.</p>
           <button className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
-          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white">Ver más</button>
+          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</button>
         </article>
 
         <article className="bg-white rounded-2xl p-10 h-full border-2 border-[#F5F5F5] hover:border-[#E85D04] transition-all duration-300 hover:-translate-y-1">
@@ -31,7 +31,7 @@ const NuestroServicios = () => {
           <h3 className="verde-olivo font-bold text-2xl leading-snug mb-6">Consultoría Institucional</h3>
           <p className="text-gray-700 leading-relaxed mb-10">Servicios especializados para instancias públicas que buscan profesionalizar procesos y optimizar su impacto cultural.</p>
           <button className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
-          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white">Ver más</button>
+          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</button>
         </article>
 
         <article className="bg-white rounded-2xl p-10 h-full border-2 border-[#F5F5F5] hover:border-[#E85D04] transition-all duration-300 hover:-translate-y-1">
@@ -39,7 +39,7 @@ const NuestroServicios = () => {
           <h3 className="verde-olivo font-bold text-2xl leading-snug mb-6">Capacitación para Equipos</h3>
           <p className="text-gray-700 leading-relaxed mb-10">Programas de formación en gestión, producción y políticas culturales para equipos de instituciones culturales.</p>
           <button className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
-          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white">Ver más</button>
+          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</button>
         </article>
 
       </div>

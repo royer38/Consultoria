@@ -6,7 +6,7 @@ const S7ptimo = () => {
         <h2 className="naranja font-bold text-5xl">S7PTIMO</h2>
         <p className="text-white text-[18px]">Programación escénica contemporánea en La Titería</p>
         <p className="text-white text-[18px]">Un espacio para las propuestas más innovadoras de las artes escénicas en México. Descubre nuestra cartelera y forma parte de esta experiencia única.</p>
-        <button className="text-white bg-naranja p-3 font-bold w-fit rounded hover:bg-[#D45103]">Ver programación y boletos</button>
+        <button className="text-white bg-naranja p-3 font-bold w-fit rounded hover:bg-[#D45103] hover:cursor-pointer">Ver programación y boletos</button>
         </div>
     </section>
   )
