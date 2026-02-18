@@ -1,6 +1,9 @@
 import NuestrasRedes from "../Seccions/NuestrasRedes"
 
 const Contacto = () => {
+  const LinkedIn_Link = "https://www.linkedin.com/company/7-consultor%C3%ADa-cultural/posts?lipi=urn%3Ali%3Apa[…]_page_posts_published%3B11579e87-81c2-463b-b732-fb2e147fa7a3";
+  const Instagram_Link = "https://www.instagram.com/7consultoriacultural?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+
   return (
     <article>
         <section className="bg-verde-olivo text-white text-center py-24">
@@ -90,9 +93,9 @@ const Contacto = () => {
                 </article>
 
                 <div className="text-white font-bold grid grid-cols-1 md:grid-cols-3 gap-3 justify-items-start max-w-md">
-                  <button className="bg-verde-olivo px-6 py-3 rounded hover:bg-[#7A8B4A] transition duration-300">LinkedIn</button>
-                  <button className="bg-verde-olivo px-6 py-3 rounded hover:bg-[#7A8B4A] transition duration-300">Instagram</button>
-                  <button className="bg-verde-olivo px-6 py-3 rounded hover:bg-[#7A8B4A] transition duration-300">Facebook</button>
+                  <a className="bg-verde-olivo px-6 py-3 rounded hover:bg-[#7A8B4A] transition duration-300" href={LinkedIn_Link} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a className="bg-verde-olivo px-6 py-3 rounded hover:bg-[#7A8B4A] transition duration-300" href={Instagram_Link} target="_blank" rel="noopener noreferrer">Instagram</a>
+                  <a className="bg-verde-olivo px-6 py-3 rounded hover:bg-[#7A8B4A] transition duration-300">Facebook</a>
                 </div>
             </div>
           </section>

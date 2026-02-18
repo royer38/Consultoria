@@ -46,17 +46,17 @@ const Footer = () => {
                         <div className="flex flex-col gap-6 text-white/90">
                         <div>
                             <p className="font-semibold text-white">Ilona Goyeneche</p>
-                            <p>+52 55 3474 2139</p>
+                            <p className="text-white font-bold leading-relaxed hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">ilonagoyeneche@gmail.com</p>
                         </div>
 
                         <div>
                             <p className="font-semibold text-white">Leonardo Daniel Miranda</p>
-                            <p>+52 656 101 2488</p>
+                            <p className="text-white font-bold leading-relaxed hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">mirandacanodaniel@gmail.com</p>
                         </div>
 
                         <div>
                             <p className="font-semibold text-white">Sheila Flores Galaviz</p>
-                            <p>+52 55 7610 7332</p>
+                            <p className="text-white font-bold leading-relaxed hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">sheilatalking@gmail.com</p>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import DanielMIranda from "../assets/DanielMiranda.jpeg";
-import IlonaGoyeneche from "../assets/Ilona.JPG";
+import IlonaGoyeneche from "../assets/IlonaGoyeneche.jpg";
 
 const NuestroEquipo = () => {
   return (
