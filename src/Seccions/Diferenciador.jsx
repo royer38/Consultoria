@@ -44,10 +44,9 @@ const Diferenciador = () => {
         </section>
 
         <section className="bg-verde-olivo max-w-7xl mx-auto px-14 py-12 rounded-2xl">
-            <p className="naranja-claro text-center text-[2.5rem] font-bold leading-none mb-4">10+</p>
+            <p className="naranja-claro text-center text-[2.5rem] font-bold leading-none mb-4">+10</p>
             <div className="grid grid-rows-2 text-center text-[16px]">
             <span className="text-white">Compañías acompañadas exitosamente en movilidad internacional (2023-2025)</span>
-            <span className="text-white">Alemania • Uruguay • Colombia • Perú • Chile</span>
             </div>
         </section>
     </article>

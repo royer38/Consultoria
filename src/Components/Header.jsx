@@ -16,8 +16,8 @@ const Header = () => {
         <div className="flex items-center gap-2">
           <span className="naranja text-5xl">7</span>
           <span className="text-[0.95rem] verde-olivo flex flex-col gap-0 leading-none">
-            <span>consultoría</span>
-            <span>cultural</span>
+            <span>Consultoría</span>
+            <span>Cultural</span>
           </span>
         </div>
 

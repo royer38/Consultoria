@@ -3,11 +3,11 @@ const Servicios = () => {
     <article>
         <section className="bg-verde-olivo py-24 text-center">
             <h1 className="text-white font-bold text-5xl">Nuestros Servicios</h1>
-            <p className="text-white text-[19.2px] mt-10">Acompañamos a artistas, compañías, instituciones y gobiernos en la profesionalización y crecimiento de sus proyectos culturales</p>
+            <p className="text-white text-[19.2px] mt-10">Acompañamos a artistas, compañías, festivales, instituciones y gobiernos en la….</p>
         </section>
 
         <section className="py-24 max-w-6xl mx-auto">
-            <p className="text-center text-[18.4px] mb-15">Con más de 25 años de experiencia combinada, ofrecemos servicios especializados que integran conocimiento institucional, visión curatorial y capacidad técnica de producción.</p>
+            <p className="text-center text-[18.4px] mb-15">Con más de 25 años de experiencia, ofrecemos servicios especializados, conocimiento institucional, visión curatorial y capacidad integral de producción</p>
 
             {/* cards */}
             {/* HEADER */}
@@ -146,10 +146,6 @@ const Servicios = () => {
             <div className="mt-12 flex flex-col sm:flex-row gap-6">
                 <button className="bg-[#E85D04] text-white font-bold px-10 py-4 rounded-lg hover:-translate-y-1 hover:bg-[#c94e03] transition duration-300 hover:cursor-pointer">
                 Solicitar cotización
-                </button>
-
-                <button className="border-2 border-[#5C6B2F] text-[#5C6B2F] font-bold px-10 py-4 rounded-lg hover:-translate-y-1 hover:bg-[#5C6B2F] hover:text-white transition duration-300 hover:cursor-pointer">
-                Ver temarios
                 </button>
             </div>
 
