@@ -24,16 +24,13 @@ const Servicios = () => {
                 </div>
 
                 <p className="text-[17px] sm:text-[18.4px] text-gray-800 leading-relaxed">
-                    Acompañamiento integral para creadores y compañías escénicas en el diseño,
-                    desarrollo y postulación de proyectos artísticos a convocatorias públicas y privadas.
-                    Nuestro objetivo es fortalecer la capacidad de artistas independientes para acceder
-                    a financiamiento y desarrollar proyectos sostenibles.
+                    Acompañamiento integral en diseño, desarrollo y postulación de proyectos a convocatorias públicas y privadas.
                 </p>
 
                 </div>
 
             {/* CARD GRIS */}
-            <div className="mt-12 bg-gray-100 rounded-2xl p-10">
+            {/* <div className="mt-12 bg-gray-100 rounded-2xl p-10">
                 <h3 className="text-[#5C6B2F] font-bold text-[22px] mb-8">
                 Incluye:
                 </h3>
@@ -69,7 +66,7 @@ const Servicios = () => {
                     <span>Asesoría en cumplimiento de requisitos institucionales</span>
                 </li>
                 </ul>
-            </div>
+            </div> */}
 
             {/* BOTONES */}
             <div className="mt-12 flex flex-col sm:flex-row gap-6">
@@ -93,18 +90,17 @@ const Servicios = () => {
                     </div>
 
                     <h2 className="text-[28px] sm:text-[35.2px] font-bold text-[#5C6B2F] leading-tight">
-                    Capacitación para Equipos de Trabajo
+                    Mentoría de Movilidad Internacional
                     </h2>
                 </div>
 
                 <p className="text-[17px] sm:text-[18.4px] text-gray-800 leading-relaxed">
-                    Programas de formación diseñados para fortalecer competencias en equipos de instituciones culturales, enfocados en gestión, producción y políticas culturales. Diseñamos talleres y programas a la medida de las necesidades de cada organización.
+                Programa intensivo para proyectos escénicos que buscan dialogar con  circuitos nacionales e internacionales. Vinculación con festivales y redes de programación.                
                 </p>
-
                 </div>
 
             {/* CARD GRIS */}
-            <div className="mt-12 bg-gray-100 rounded-2xl p-10">
+            {/* <div className="mt-12 bg-gray-100 rounded-2xl p-10">
                 <h3 className="text-[#5C6B2F] font-bold text-[22px] mb-8">
                 Temas disponibles:
                 </h3>
@@ -140,7 +136,7 @@ const Servicios = () => {
                     <span>Gestión de espacios culturales</span>
                 </li>
                 </ul>
-            </div>
+            </div> */}
 
             {/* BOTONES */}
             <div className="mt-12 flex flex-col sm:flex-row gap-6">
@@ -160,18 +156,18 @@ const Servicios = () => {
                     </div>
 
                     <h2 className="text-[28px] sm:text-[35.2px] font-bold text-[#5C6B2F] leading-tight">
-                    Consultoría para Instituciones Públicas en México
+                    Consultoría Institucional
                     </h2>
                 </div>
 
                 <p className="text-[17px] sm:text-[18.4px] text-gray-800 leading-relaxed">
-                Servicios especializados para instancias estatales, municipales, universidades y organizaciones culturales que buscan profesionalizar sus procesos y optimizar su impacto. Trabajamos de la mano con instituciones para desarrollar políticas culturales efectivas y sostenibles.
+                Servicios especializados para instancias públicas que buscan profesionalizar procesos y fortalecer su impacto cultural. Incluye capacitación para equipos en gestión, producción y políticas culturales
                 </p>
 
                 </div>
 
             {/* CARD GRIS */}
-            <div className="mt-12 bg-gray-100 rounded-2xl p-10">
+            {/* <div className="mt-12 bg-gray-100 rounded-2xl p-10">
                 <h3 className="text-[#5C6B2F] font-bold text-[22px] mb-8">
                 Alcances específicos:
                 </h3>
@@ -207,7 +203,7 @@ const Servicios = () => {
                     <span>Estudios de viabilidad y modelos de gestión</span>
                 </li>
                 </ul>
-            </div>
+            </div> */}
 
             {/* BOTONES */}
             <div className="mt-12 flex flex-col sm:flex-row gap-6">
@@ -231,12 +227,12 @@ const Servicios = () => {
                     </div>
 
                     <h2 className="text-[28px] sm:text-[35.2px] font-bold text-[#5C6B2F] leading-tight">
-                    Mentoría de Movilidad para Proyectos Escénicos
+                    Diseño de Proyecto Artístico
                     </h2>
                 </div>
 
                 <p className="text-[17px] sm:text-[18.4px] text-gray-800 leading-relaxed">
-                Programa de acompañamiento intensivo para compañías escénicas que buscan ampliar su circulación a nivel nacional e internacional. Desarrollamos estrategias de vinculación con festivales, espacios culturales y redes de programación en México, América Latina y Europa.
+                Proceso de acompañamiento dramatúrgico de propuestas escénicas y multidisciplinarias, construcción conceptual, estructura narrativa y coherencia estética.
                 </p>
                 <div className="bg-naranja flex flex-col items-center max-w-full text-center py-8 rounded-xl gap-3">
                     <p className="text-white font-bold text-2xl">📢 Próxima Convocatoria 2026</p>
@@ -254,32 +250,37 @@ const Servicios = () => {
                 <ul className="grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-12 text-gray-800 text-[16px]">
                 <li className="flex gap-4">
                     <span className="text-[#E85D04] font-bold text-lg">✓</span>
-                    <span>Diagnóstico integral desde perspectiva curatorial y de gestión</span>
+                    <span>Definición de visión artística. </span>
                 </li>
 
                 <li className="flex gap-4">
                     <span className="text-[#E85D04] font-bold text-lg">✓</span>
-                    <span>Desarrollo de materiales de promoción y dossier artístico</span>
+                    <span>Clarificación de propósito y posicionamiento.</span>
                 </li>
 
                 <li className="flex gap-4">
                     <span className="text-[#E85D04] font-bold text-lg">✓</span>
-                    <span>Mapeo de festivales, programadores y oportunidades de financiamiento</span>
+                    <span>Identificación de contexto, públicos y territorios estratégicos.</span>
                 </li>
 
                 <li className="flex gap-4">
                     <span className="text-[#E85D04] font-bold text-lg">✓</span>
-                    <span>Acompañamiento en primeros contactos y negociaciones</span>
+                    <span>Análisis de pertinencia y oportunidad cultural.</span>
                 </li>
 
                 <li className="flex gap-4">
                     <span className="text-[#E85D04] font-bold text-lg">✓</span>
-                    <span>Sesiones individuales y grupales</span>
+                    <span>Definición de formatos y proceso artístico.</span>
                 </li>
 
                 <li className="flex gap-4">
                     <span className="text-[#E85D04] font-bold text-lg">✓</span>
-                    <span>Red de contactos con programadores internacionales</span>
+                    <span>Diseño de narrativa para dossier y presentaciones.</span>
+                </li>
+
+                 <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Diseño de proyección estratégica y sostenibilidad.</span>
                 </li>
                 </ul>
             </div>
@@ -303,6 +304,145 @@ const Servicios = () => {
                 Ver casos de éxito
                 </button>
             </div>
+
+                        {/* divisor */}
+            <hr className="my-20 border-gray-100 border-2" />
+            
+            <div className="flex flex-col gap-6">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8 text-center sm:text-left">
+                    
+                    <div className="w-33 h-40 border-3 bg-gray-100 border-[#E85D04] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
+                    <span className="text-5xl opacity-90">🏛️</span>
+                    </div>
+
+                    <h2 className="text-[28px] sm:text-[35.2px] font-bold text-[#5C6B2F] leading-tight">
+                    Producción Escénica
+                    </h2>
+                </div>
+
+                <p className="text-[17px] sm:text-[18.4px] text-gray-800 leading-relaxed">
+                Proceso integral de planificación, gestión, coordinación y ejecución de un proyecto escénico. Implica convertir una propuesta artística en una experiencia escénica concreta, viable y sustentable.
+                </p>
+
+                </div>
+
+            {/* CARD GRIS */}
+            {/* <div className="mt-12 bg-gray-100 rounded-2xl p-10">
+                <h3 className="text-[#5C6B2F] font-bold text-[22px] mb-8">
+                Alcances específicos:
+                </h3>
+
+                <ul className="grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-12 text-gray-800 text-[16px]">
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Diagnóstico y desarrollo de procesos institucionales</span>
+                </li>
+
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Alineación con programas y políticas públicas culturales</span>
+                </li>
+
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Infraestructura cultural: diagnóstico, programación y equipamiento</span>
+                </li>
+
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Vinculación institucional y desarrollo de redes de colaboración</span>
+                </li>
+
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Diseño de convocatorias y sistemas de evaluación</span>
+                </li>
+
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Estudios de viabilidad y modelos de gestión</span>
+                </li>
+                </ul>
+            </div> */}
+
+            {/* BOTONES */}
+            <div className="mt-12 flex flex-col sm:flex-row gap-6">
+                <button className="bg-[#E85D04] text-white font-bold px-10 py-4 rounded-lg hover:-translate-y-1 hover:bg-[#c94e03] transition duration-300 hover:cursor-pointer">
+                Solicitar cotización
+                </button>
+            </div>
+
+            {/* divisor */}
+            <hr className="my-20 border-gray-100 border-2" />
+
+            <div className="flex flex-col gap-6">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8 text-center sm:text-left">
+                    
+                    <div className="w-33 h-40 border-3 bg-gray-100 border-[#E85D04] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
+                    <span className="text-5xl opacity-90">🏛️</span>
+                    </div>
+
+                    <h2 className="text-[28px] sm:text-[35.2px] font-bold text-[#5C6B2F] leading-tight">
+                    Curaduría y Programación
+                    </h2>
+                </div>
+
+                <p className="text-[17px] sm:text-[18.4px] text-gray-800 leading-relaxed">
+                Diseño y planeación de líneas curatoriales y programación artística para festivales, ciclos y espacios culturales que dialoguen con contextos territoriales, públicos específicos y objetivos institucionales
+                </p>
+
+                </div>
+
+            {/* CARD GRIS */}
+            <div className="mt-12 bg-gray-100 rounded-2xl p-10">
+                <h3 className="text-[#5C6B2F] font-bold text-[22px] mb-8">
+                Alcances específicos:
+                </h3>
+
+                <ul className="grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-12 text-gray-800 text-[16px]">
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Investigación de contenidos y contextos. </span>
+                </li>
+
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Evaluación crítica y selección de propuestas. </span>
+                </li>
+
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Construcción de relatos curatoriales integrados. </span>
+                </li>
+
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Definición de criterios y enfoque conceptual. </span>
+                </li>
+
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Vinculación con audiencias y territorios estratégicos. </span>
+                </li>
+
+                <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Diseño de programación alineada a objetivos institucionales.</span>
+                </li>
+                </ul>
+            </div>
+
+            {/* BOTONES */}
+            <div className="mt-12 flex flex-col sm:flex-row gap-6">
+                <button className="bg-[#E85D04] text-white font-bold px-10 py-4 rounded-lg hover:-translate-y-1 hover:bg-[#c94e03] transition duration-300 hover:cursor-pointer">
+                Agendar reunión exploratoria
+                </button>
+
+                <button className="border-2 border-[#5C6B2F] text-[#5C6B2F] font-bold px-10 py-4 rounded-lg hover:-translate-y-1 hover:bg-[#5C6B2F] hover:text-white transition duration-300 hover:cursor-pointer">
+                Casos de éxito
+                </button>
+            </div>
+
         </section>
 
         <section className="bg-verde-olivo py-10 text-center flex flex-col items-center max-w-full mx-auto gap-8">

@@ -2,6 +2,7 @@ import { useState } from "react";
 import OpenMenu from "../assets/OpenMenu.svg";
 import CloseMenu from "../assets/CloseMenu.svg";
 import { NavLink } from "react-router-dom";
+import MainLogo from "../assets/7CC.png"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,11 +15,12 @@ const Header = () => {
 
         {/* LOGO */}
         <div className="flex items-center gap-2">
-          <span className="naranja text-5xl">7</span>
+          <img src={MainLogo} alt="LogoPrincipal" className="w-56 md:w-45 object-contain"/>
+          {/* <span className="naranja text-5xl">7</span>
           <span className="text-[0.95rem] verde-olivo flex flex-col gap-0 leading-none">
             <span>Consultoría</span>
             <span>Cultural</span>
-          </span>
+          </span> */}
         </div>
 
         {/* BOTÓN HAMBURGUESA (solo mobile) */}
