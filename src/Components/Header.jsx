@@ -2,7 +2,7 @@ import { useState } from "react";
 import OpenMenu from "../assets/OpenMenu.svg";
 import CloseMenu from "../assets/CloseMenu.svg";
 import { NavLink } from "react-router-dom";
-import MainLogo from "../assets/7CC.png"
+import MainLogo from "../assets/LogoNaranja.png"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -6,11 +6,11 @@ const ResultadosRecientes = () => {
         <p className="text-center text-[18.4px]">Logros concretos que demuestran la efectividad de nuestras metodologías</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 items-stretch">
             {/* cards */}
             <article className="bg-gray-100 rounded-2xl shadow-sm p-10 relative h-full overflow-hidden">
                 <span className="absolute top-0 left-0 w-full h-1 bg-naranja"></span>
-                    <h3 className="text-2xl font-bold verde-olivo mb-6">
+                    <h3 className="text-2xl font-bold verde-olivo mb-6 min-h-18">
                         Mentoría de Movilidad
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
@@ -20,17 +20,17 @@ const ResultadosRecientes = () => {
 
             <article className="bg-gray-100 rounded-2xl shadow-sm p-10 relative h-full overflow-hidden">
                 <span className="absolute top-0 left-0 w-full h-1 bg-naranja"></span>
-                    <h3 className="text-2xl font-bold verde-olivo mb-6">
-                        Estudios de Viabilidad
+                    <h3 className="text-2xl font-bold verde-olivo mb-6 min-h-18">
+                        Estudio de Viabilidad y Asistencia
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
-                        Entrega de <span className="naranja font-bold">estudio integral</span> para el Teatro del IMSS en Monterrey, incluyendo análisis de estacionalidad, modelado estadístico y recomendaciones estratégicas.
+                        Realización de <span className="naranja font-bold">investigación de viabilidad</span> y asistencia para teatro público en Monterrey, México, incluyendo un análisis estadístico para identificar periodos de estacionalidad y recomendaciones estratégicas de operación y sostenibilidad
                     </p>
             </article>
 
             <article className="bg-gray-100 rounded-2xl shadow-sm p-10 relative h-full overflow-hidden">
                 <span className="absolute top-0 left-0 w-full h-1 bg-naranja"></span>
-                    <h3 className="text-2xl font-bold verde-olivo mb-6">
+                    <h3 className="text-2xl font-bold verde-olivo mb-6 min-h-18">
                         Asesoría para Convocatorias
                     </h3>
                     <p className="text-gray-700 leading-relaxed">

@@ -1,12 +1,14 @@
+import s7ptimoLogo from "../assets/S7ptimoNaranja.png"
+
 const S7ptimo_P = () => {
   return (
     <article>
         <section className="bg-black py-24 relative overflow-hidden">
             <span className="absolute top-1/2 right-0 -translate-y-1/2 text-[18rem] font-bold text-[#3D2E25]">7</span>
-                <div className="z-10 max-w-6xl mx-auto flex flex-col gap-7 relative ">
-                    <h1 className="naranja font-bold text-[80px] text-center">S7PTIMO</h1>
+                <div className="z-10 max-w-6xl mx-auto flex flex-col gap-7 relative items-center">
+                    <img src={s7ptimoLogo} alt="LogoFooter-Consultoria-7" className="w-56 md:w-50 md:h-25 object-contain"/>
                     <p className="text-white text-2xl text-center">Programación Escénica Contemporánea</p>
-                    <p className="text-white/80 text-[17.6px] text-center">La Titería, Ciudad de México</p>
+                    <p className="text-white/80 text-[17.6px] text-center">Foro Cultural Coyoacán, Ciudad de México</p>
                 </div>
         </section>
 
@@ -29,17 +31,18 @@ const S7ptimo_P = () => {
                 <article className="bg-gray-50 rounded-2xl shadow-sm p-10 relative h-full overflow-hidden">
                 <span className="absolute left-0 top-0 h-full w-1 bg-naranja rounded-l-2xl" />
                 <h3 className="text-[22.4px] font-bold verde-olivo mb-6">📍 Ubicación</h3>
-                <h4 className="naranja text-[17.6px] font-bold mb-3">La Titería</h4>
-                <p>Calle Centenario 9, Coyoacán</p>
+                <h4 className="naranja text-[17.6px] font-bold mb-3">S7ptimo Foro Cultural</h4>
+                <p>Calle Vicente Guerrero 7, Coyoacán</p>
                 <p>Ciudad de México, 04000</p>
                 </article>
 
                 <article className="bg-gray-50 rounded-2xl shadow-sm p-10 relative h-full overflow-hidden">
                 <span className="absolute left-0 top-0 h-full w-1 bg-naranja rounded-l-2xl" />
-                <h3 className="text-[22.4px] font-bold verde-olivo mb-6">🎭 Funciones</h3>
-                <h4 className="naranja text-[17.6px] font-bold mb-3">Jueves a Domingos</h4>
-                <p>20:00 hrs</p>
-                <p>Duración variable según obra</p>
+                <h3 className="text-[22.4px] font-bold verde-olivo mb-6">Funciones</h3>
+                {/* <h4 className="naranja text-[17.6px] font-bold mb-3">Jueves a Domingos</h4> */}
+                <p>Lunes 20:00 hrs</p>
+                <p>Jueves 20:00 hrs</p>
+                <p>Sábado 20:00 hrs</p>
                 </article>
                 </div>
                 </div>
@@ -220,7 +223,8 @@ const S7ptimo_P = () => {
                 <p className="text-[18.4px] text-center">Estamos siempre en búsqueda de propuestas escénicas contemporáneas que desafíen, cuestionen y emocionen. Si tu compañía o colectivo tiene un proyecto que resuena con nuestra línea curatorial, nos encantaría conocerlo.</p>
             </div>
 
-            <div className="flex flex-col max-w-4xl mx-auto bg-gray-100 p-8 rounded-xl mt-8 gap-8">
+            {/* criterios de seleccion */}
+            {/* <div className="flex flex-col max-w-4xl mx-auto bg-gray-100 p-8 rounded-xl mt-8 gap-8">
                 <h3 className="verde-olivo font-bold text-[22.4px]">Criterios de Selección</h3>
                 <ul className="list-['✓'] pl-6 marker:text-[#E85D04] marker:font-bold text-gray-700 flex flex-col gap-4">
                     <li>Propuestas escénicas contemporáneas (teatro, danza, performance, híbridos)</li>
@@ -230,7 +234,7 @@ const S7ptimo_P = () => {
                     <li>Compañías profesionales con trayectoria comprobable</li>
                     <li>Disponibilidad para temporadas de mínimo 4 funciones</li>
                 </ul>
-            </div>
+            </div> */}
 
             <div className="flex flex-col max-w-4xl mx-auto gap-8 items-center">
                 <div className="flex flex-row max-w-4xl mx-auto text-[18.4px] mt-8">

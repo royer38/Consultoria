@@ -250,7 +250,7 @@ const NuestroEquipo = () => {
         </section>
 
         <section className="bg-verde-olivo text-center py-20">
-            <p className="text-white font-bold text-[40px]">¿Listo para trabajar con nosotros?</p>
+            <p className="text-white font-bold text-[40px]">¿Listo para compartir tu proyecto con nosotrxs?</p>
             <button className="bg-naranja text-white font-bold text-[16.8px] mt-10 px-10 py-4 rounded bg-naranja-oscuro transition duration-300 hover:-translate-y-1 hover:cursor-pointer">Contáctanos</button>
         </section>
 

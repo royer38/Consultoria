@@ -8,7 +8,7 @@ const Contacto = () => {
     <article>
         <section className="bg-verde-olivo text-white text-center py-24">
             <h1 className="text-5xl font-bold">Contáctanos</h1>
-            <p className="text-[19.2px] mt-10">Platiquemos tu proyecto. Estamos aquí para ayudarte a alcanzar tus objetivos culturales.</p>
+            <p className="text-[19.2px] mt-10">Estamos aquí para ayudarte. Platiquemos sobre tu proyecto</p>
         </section>
 
       <div className="max-w-6xl mx-auto px-6 py-20">

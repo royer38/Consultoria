@@ -1,8 +1,8 @@
-import Logo from "../assets/s7ptimoImage.png"
+import Logo from "../assets/S7ptimoNaranja.png"
 
 const S7ptimo = () => {
   return (
-    <section className="bg-negro-profundo py-16 relative overflow-hidden font-garamond">
+    <section className="bg-black py-16 relative overflow-hidden font-garamond">
         <span className="absolute top-1/2 right-0 -translate-y-1/2 text-[18rem] font-bold terracota-oscuro">7</span>
         <div className="max-w-6xl mx-auto flex flex-col gap-7 relative z-10">
         <div className="flex justify-start">

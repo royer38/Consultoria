@@ -1,3 +1,6 @@
+import LogoNaranja from "../assets/LogoNaranja.png"
+
+
 const Footer = () => {
     const currentYear = new Date();
     const Year = currentYear.getFullYear();
@@ -10,15 +13,16 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* columna 1 */}
                     <div className="flex flex-col gap-6">
-                        <div className="flex items-star gap-4">
-                            <span className="naranja font-bold text-6xl leading-none">7</span>
-                            <div className="flex flex-col leading-tight font-semibold text-[16px]">
-                                <span>consultoría</span>
-                                <span>cultural</span>
+                        <img src={LogoNaranja} alt="LogoFooter-Consultoria-7" className="w-56 md:w-45 object-contain"/>
+                        <p className="text-white/90 text-[16px] font-bold">Hacemos de la Gestión un Arte</p>
+                            <div className="flex flex-col">
+                                <ul className="flex flex-col gap-3 text-white/90">
+                                <li className="hover:text-[#E85D04] transition duration-300">Ciudad de México</li>
+                                <li className="hover:text-[#E85D04] transition duration-300">Lima</li>
+                                <li className="hover:text-[#E85D04] transition duration-300">Santiago</li>
+                                </ul>
                             </div>
-                        </div>
-                        <p className="text-white/90 text-[16px]">Donde la gestión se vuelve arte</p>
-                        <p className="text-white/90 text-[16px]">Ciudad de México • Lima • Santiago</p>
+
                     </div>
                     {/* columna 2 */}
                     <div className="flex flex-col gap-5">
