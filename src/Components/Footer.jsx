@@ -1,9 +1,15 @@
-import LogoNaranja from "../assets/LogoNaranja.png"
-
+import { Link, useNavigate } from "react-router-dom";
+import LogoNaranja from "../assets/FooterTransparente.png"
 
 const Footer = () => {
     const currentYear = new Date();
     const Year = currentYear.getFullYear();
+    const navigate = useNavigate();
+
+    const handleNavigate = (url) => {
+        navigate(url)
+        window.scrollTo({top: 0, behavior: "smooth"})
+    }
 
   return (
     <footer className="bg-verde-olivo py-8">
@@ -38,9 +44,9 @@ const Footer = () => {
                     <div className="flex flex-col gap-5">
                         <h4 className="font-bold text-lg">Empresa</h4>
                         <ul className="flex flex-col gap-3 text-white/90">
-                        <li className="hover:text-[#E85D04] transition duration-300">Equipo</li>
-                        <li className="hover:text-[#E85D04] transition duration-300">S7PTIMO</li>
-                        <li className="hover:text-[#E85D04] transition duration-300">Contacto</li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/NuestroEquipo")}>Equipo</button></li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/S7PTIMO")}>S7PTIMO</button></li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/Contacto")}>Contacto</button></li>
                         <li className="hover:text-[#E85D04] transition duration-300">Aviso de Privacidad</li>
                         </ul>
                     </div>

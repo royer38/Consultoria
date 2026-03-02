@@ -1,4 +1,5 @@
-import Logo from "../assets/S7ptimoNaranja.png"
+import { Link } from "react-router-dom"
+import Logo from "../assets/S7ptmoSeccion.png"
 
 const S7ptimo = () => {
   return (
@@ -10,7 +11,7 @@ const S7ptimo = () => {
         </div>
         <p className="hueso text-[18px]">Programación Escénica Contemporánea en S7ptimo, Foro Coyoacán</p>
         <p className="hueso text-[18px]">Un espacio para las artes escénicas en Coyoacán en la Ciudad de México. Descubre nuestra cartelera</p>
-        <button className="hueso bg-terracota p-3 font-bold w-fit rounded bg-terracota-oscuro-hover transition duration-300 hover:cursor-pointer">Ver programación y boletos</button>
+        <Link to="S7PTIMO#cartelera" className="hueso bg-terracota p-3 font-bold w-fit rounded bg-terracota-oscuro-hover transition duration-300 hover:cursor-pointer">Ver programación y boletos</Link>
         </div>
     </section>
   )

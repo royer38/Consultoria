@@ -1,4 +1,4 @@
-import s7ptimoLogo from "../assets/S7ptimoNaranja.png"
+import s7ptimoLogo from "../assets/S7ptmoSeccion.png"
 
 const S7ptimo_P = () => {
   return (
@@ -6,7 +6,7 @@ const S7ptimo_P = () => {
         <section className="bg-black py-24 relative overflow-hidden">
             <span className="absolute top-1/2 right-0 -translate-y-1/2 text-[18rem] font-bold text-[#3D2E25]">7</span>
                 <div className="z-10 max-w-6xl mx-auto flex flex-col gap-7 relative items-center">
-                    <img src={s7ptimoLogo} alt="LogoFooter-Consultoria-7" className="w-56 md:w-50 md:h-25 object-contain"/>
+                    <img src={s7ptimoLogo} alt="LogoFooter-Consultoria-7" className="w-56 md:w-64 object-contain"/>
                     <p className="text-white text-2xl text-center">Programación Escénica Contemporánea</p>
                     <p className="text-white/80 text-[17.6px] text-center">Foro Cultural Coyoacán, Ciudad de México</p>
                 </div>
@@ -49,7 +49,7 @@ const S7ptimo_P = () => {
             </div>
         </section>
 
-        <section className="py-24">
+        <section className="py-24" id="cartelera">
             <h2 className="verde-olivo font-bold text-[40px] text-center mb-12">Cartelera Actual</h2>
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 items-stretch">
