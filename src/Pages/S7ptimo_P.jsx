@@ -1,6 +1,14 @@
+import { Link, useNavigate } from "react-router-dom"
 import s7ptimoLogo from "../assets/S7ptmoSeccion.png"
 
 const S7ptimo_P = () => {
+    const navigate = useNavigate();
+
+    const handleNavigate = (url) => {
+        navigate(url)
+        window.scrollTo({top: 0, behavior: "smooth"})
+    };
+
   return (
     <article>
         <section className="bg-black py-24 relative overflow-hidden">
@@ -240,7 +248,7 @@ const S7ptimo_P = () => {
                 <div className="flex flex-row max-w-4xl mx-auto text-[18.4px] mt-8">
                     <p><span className="font-bold">Proceso: </span><span>Recibimos propuestas de forma continua. El equipo curatorial revisa todas las solicitudes y contacta a los proyectos seleccionados para seguimiento y programación.</span></p>
                 </div>
-                <button className="text-white font-bold bg-naranja rounded py-4 px-10 max-w-60 bg-naranja-oscuro hover:-translate-y-1 transition duration-300">Enviar Propuesta</button>
+                <button onClick={() => handleNavigate("/Contacto")} className="text-white font-bold bg-naranja rounded py-4 px-10 max-w-60 bg-naranja-oscuro hover:-translate-y-1 transition duration-300">Enviar Propuesta</button>
             </div>
 
         </section>

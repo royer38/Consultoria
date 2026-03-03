@@ -1,7 +1,9 @@
 import DanielMIranda from "../assets/DanielMiranda.jpeg";
 import IlonaGoyeneche from "../assets/IlonaGoyeneche.jpg";
+import useHandleNavigateTop from "../Hooks/useHandleNavigateTop";
 
 const NuestroEquipo = () => {
+    const handleNavigateTop = useHandleNavigateTop();
   return (
     <article>
         <section className="bg-verde-olivo text-center text-white py-24">
@@ -83,7 +85,7 @@ const NuestroEquipo = () => {
 
                     <div className="flex items-center gap-3">
                     <span className="naranja text-xl">✉️</span>
-                    <span className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">mirandacanodaniel@gmail.com</span>
+                    <a href={`mailto:mirandacanodaniel@gmail.com`} className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">mirandacanodaniel@gmail.com</a>
                     </div>
                 </div>
                 </div>
@@ -152,7 +154,7 @@ const NuestroEquipo = () => {
 
                     <div className="flex items-center gap-3">
                     <span className="naranja text-xl">✉️</span>
-                    <span className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">sheilatalking@gmail.com</span>
+                    <a href={`mailto:sheilatalking@gmail.com`} className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">sheilatalking@gmail.com</a>
                     </div>
                 </div>
                 </div>
@@ -225,7 +227,7 @@ const NuestroEquipo = () => {
 
                     <div className="flex items-center gap-3">
                     <span className="naranja text-xl">✉️</span>
-                    <span className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">ilonagoyeneche@gmail.com</span>
+                    <a href={`mailto:ilonagoyeneche@gmail.com`} className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">ilonagoyeneche@gmail.com</a>
                     </div>
                 </div>
                 </div>
@@ -251,7 +253,7 @@ const NuestroEquipo = () => {
 
         <section className="bg-verde-olivo text-center py-20">
             <p className="text-white font-bold text-[40px]">¿Listo para compartir tu proyecto con nosotrxs?</p>
-            <button className="bg-naranja text-white font-bold text-[16.8px] mt-10 px-10 py-4 rounded bg-naranja-oscuro transition duration-300 hover:-translate-y-1 hover:cursor-pointer">Contáctanos</button>
+            <button onClick={() => handleNavigateTop("/Contacto")}  className="bg-naranja text-white font-bold text-[16.8px] mt-10 px-10 py-4 rounded bg-naranja-oscuro transition duration-300 hover:-translate-y-1 hover:cursor-pointer">Contáctanos</button>
         </section>
 
     </article>
