@@ -12,7 +12,7 @@ const NuestroEquipo = () => {
         </section>
 
         <section className="max-w-7xl mx-auto px-6 py-20">
-            <p className="text-[19.2px] text-justify">Somos tres profesionales con más de 25 años de experiencia combinada en gestión cultural pública y privada, curaduría internacional y producción escénica. Nuestra trayectoria en instituciones de alto nivel y nuestra red de contactos en México, Europa y América Latina son el fundamento de 7 Consultoría Cultural.</p>
+            <p className="text-[19.2px] text-justify">Somos tres profesionales con más de 25 años de experiencia combinada en gestión cultural pública y privada, coproducción y curaduría internacional y producción escénica. Nuestra vinculación con la escena, trayectoria en instituciones de alto nivel y nuestra red de contactos en México, Europa y América Latina son el fundamento de 7 Consultoría Cultural.</p>
 
             <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-12 items-start mt-20">
                 <div className="w-full">
@@ -175,14 +175,12 @@ const NuestroEquipo = () => {
 
                 <div className="flex flex-col gap-5 text-gray-700 leading-relaxed text-[16.8px]">
                     <p>
-                    Más de 20 años de experiencia en curaduría de artes escénicas y movilidad internacional. Como Curadora del Festival de Teatro Iberoamericano ¡ADELANTE! en Heidelberg, Alemania, ha desarrollado una extensa red de contactos con compañías, programadores y festivales en Europa y América Latina.                    
+                    Más de 20 años de experiencia en diseño de proyectos y curaduría de artes escénicas y movilidad internacional. Como Curadora del Festival de Teatro Iberoamericano ¡ADELANTE! en Heidelberg, Alemania, ha desarrollado una extensa red de contactos con compañías, programadores y festivales en Europa y América Latina.                    </p>
+                    <p>
+                    Desarrollando proyectos y formatos de intercambio, coproducciones, redes y espacios de transferencia de conocimiento le permitió consolidar una visión integral sobre las tendencias contemporáneas en artes vivas y las necesidades de circulación de propuestas escénicas.                    
                     </p>
                     <p>
-                    Su trabajo como Ex Coordinadora de Programación en Casa del Lago UNAM le permitió consolidar una visión integral sobre las tendencias contemporáneas en artes vivas y las necesidades de circulación de propuestas escénicas innovadoras.
-                    </p>
-
-                    <p>
-                    Ilona aporta a 7 Consultoría Cultural una perspectiva única que combina conocimiento profundo de la escena europea con expertise en la realidad latinoamericana, facilitando procesos de internacionalización para compañías mexicanas.
+                    Ilona aporta a 7 Consultoría Cultural una perspectiva única que combina conocimiento de la escena europea con expertise en la realidad latinoamericana, facilitando procesos de internacionalización para compañías mexicanas.
                     </p>
                 </div>
 
@@ -199,7 +197,7 @@ const NuestroEquipo = () => {
 
                     <li className="flex gap-3">
                         <span className="naranja font-bold">›</span>
-                        <span>Ex Coordinadora de Programación, Casa del Lago UNAM</span>
+                        <span>Producción y coordinación general de coproducciones entre Chile, México y Alemania</span>
                     </li>
 
                     <li className="flex gap-3">
@@ -214,7 +212,7 @@ const NuestroEquipo = () => {
 
                     <li className="flex gap-3">
                         <span className="naranja font-bold">›</span>
-                        <span>Experta en tendencias de artes vivas contemporáneas</span>
+                        <span>Experta artes vivas latinoamericanas y la escena europea</span>
                     </li>
                     </ul>
                 </div>
@@ -239,20 +237,20 @@ const NuestroEquipo = () => {
                 <h2 className="text-[40px] verde-olivo font-bold">Nuestra Visión</h2>
                 <article className="max-w-4xl mx-auto grid grid-cols-1 gap-10 text-justify mt-10 text-[18.4px]">
                 <div>
-                   Creemos que la<span className="naranja font-bold"> gestión cultural es un arte en sí misma.</span> No estamos detrás del escenario ni frente a él. Estamos en la escena que hace posible todas las demás: la de construir estructuras, abrir caminos y profesionalizar el oficio de crear.
+                Creemos que la gestión cultural es, en sí misma, una forma de creación. No ocurre detrás del escenario ni frente a él, sino en el espacio donde todo se vuelve posible: el de construir estructuras, abrir caminos y contribuir a la profesionalización del oficio de crear.
                 </div>
                 <div>
-                   El número <span className="naranja font-bold">7 representa completitud y equilibrio</span>: los días de la semana, las notas musicales, los colores del arcoíris. En 7 Consultoría Cultural trabajamos con esa misma visión integral, acompañando a nuestros clientes en todas las dimensiones que necesitan para profesionalizarse y crecer. 
+                El número 7 ha sido históricamente asociado con la idea de equilibrio y totalidad: los siete días de la semana, las siete notas musicales, los siete colores del arcoíris. En <span className="naranja font-bold">7 Consultoría Cultural </span>trabajamos desde esa misma idea de completitud, acompañando a nuestros clientes con una mirada integral que abarca las múltiples dimensiones necesarias para fortalecer, profesionalizar y proyectar sus iniciativas.
                 </div>
                 <div>
-                    Nuestra experiencia combinada en gestión pública de alto nivel, curaduría internacional y producción ejecutiva nos permite ofrecer un servicio único en el ecosistema cultural mexicano y latinoamericano.
+                Nuestra experiencia combinada en gestión pública de alto nivel, curaduría internacional y producción ejecutiva nos permite entender el ecosistema cultural desde distintas escalas. A partir de esa perspectiva, desarrollamos estrategias, estructuras y procesos que ayudan a que los proyectos culturales no sólo existan, sino que crezcan, se sostengan y alcancen su máximo potencial dentro del panorama cultural mexicano y latinoamericano.                
                 </div>
                 </article>
             </section>
         </section>
 
         <section className="bg-verde-olivo text-center py-20">
-            <p className="text-white font-bold text-[40px]">¿Listo para compartir tu proyecto con nosotrxs?</p>
+            <p className="text-white font-bold text-[40px]">Cuéntanos sobre tu proyecto. Nos encantará explorar su potencial contigo.</p>
             <button onClick={() => handleNavigateTop("/Contacto")}  className="bg-naranja text-white font-bold text-[16.8px] mt-10 px-10 py-4 rounded bg-naranja-oscuro transition duration-300 hover:-translate-y-1 hover:cursor-pointer">Contáctanos</button>
         </section>
 

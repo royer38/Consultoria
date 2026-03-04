@@ -15,7 +15,7 @@ const S7ptimo_P = () => {
             <span className="absolute top-1/2 right-0 -translate-y-1/2 text-[18rem] font-bold text-[#3D2E25]">7</span>
                 <div className="z-10 max-w-6xl mx-auto flex flex-col gap-7 relative items-center">
                     <img src={s7ptimoLogo} alt="LogoFooter-Consultoria-7" className="w-56 md:w-64 object-contain"/>
-                    <p className="text-white text-2xl text-center">Programación Escénica Contemporánea</p>
+                    <p className="text-white text-2xl text-center">Programación de Artes Escénicas Contemporáneas</p>
                     <p className="text-white/80 text-[17.6px] text-center">Foro Cultural Coyoacán, Ciudad de México</p>
                 </div>
         </section>
@@ -27,9 +27,9 @@ const S7ptimo_P = () => {
                 <article>
                     <h2 className="verde-olivo text-[35.2px] font-bold mb-9">Sobre el Proyecto</h2>
                     <div className="grid grid-cols-1 gap-8 text-[17.6px] text-gray-700">
-                    <p>S7PTIMO es un espacio dedicado a la programación escénica contemporánea que explora las fronteras del teatro, la danza y las artes vivas.</p>
-                    <p>Bajo la curaduría de 7 Consultoría Cultural, presentamos propuestas artísticas innovadoras que desafían las formas tradicionales y dialogan con las inquietudes de nuestro tiempo.</p>
-                    <p>Cada temporada es una invitación a descubrir nuevas voces y lenguajes escénicos en uno de los espacios culturales más emblemáticos de la Ciudad de México.</p>
+                    <p>S7PTIMO Foro Cultural es un espacio de artes escénicas ubicado en Coyoacán, Ciudad de México, dedicado a la presentación y acompañamiento de propuestas contemporáneas multidiciploinarias.</p>
+                    <p>Nacemos con la vocación de impulsar una escena que dialogue con nuestro tiempo y abra espacio a nuevas investigaciones, formatos, lenguajes y propuestas, generando un punto de encuentro entre creadoras, creadores y públicos diversos.</p>
+                    <p>Este primer ciclo marca el inicio de una plataforma en construcción: un espacio que crecerá de manera orgánica, afinando progresivamente su identidad en busca de consolidarse como un referente para la experimentación, la calidad artística y las buenas prácticas en gestión, producción y programación cultural.</p>
                     </div>
                 </article>
 
@@ -215,8 +215,8 @@ const S7ptimo_P = () => {
             </div>
 
             <div className="bg-verde-olivo flex flex-col gap-5 py-15 max-w-6xl rounded-xl mx-auto mt-13">
-                <p className="text-center font-bold text-white text-[28.8px]">Suscríbete a Nuestro Calendario</p>
-                <p className="text-center text-white text-[17.6px]">Recibe notificaciones de estrenos, funciones especiales y eventos exclusivos</p>
+                <p className="text-center font-bold text-white text-[28.8px]">Suscríbete a nuestra programación</p>
+                <p className="text-center text-white text-[17.6px]">Recibe información de estrenos, funciones especiales y eventos exclusivos</p>
                 <form className="flex flex-col md:flex-row gap-5 mx-auto" action="">
                     <input className="bg-white rounded py-3 px-3 w-90 placeholder:text-left border-0 focus:outline-none focus:ring-0" type="email" name="Correo" id="Correo" placeholder="Tu correo electrónico"/>
                     <button className="bg-naranja py-3 px-8 text-white font-bold rounded hover:cursor-pointer">Suscribirme</button>
@@ -227,8 +227,8 @@ const S7ptimo_P = () => {
 
         <section className="py-24">
             <div className="flex flex-col max-w-6xl mx-auto gap-8">
-                <h2 className="verde-olivo font-bold text-[35.2px] text-center">¿Quieres Presentar tu Obra en S7PTIMO?</h2>
-                <p className="text-[18.4px] text-center">Estamos siempre en búsqueda de propuestas escénicas contemporáneas que desafíen, cuestionen y emocionen. Si tu compañía o colectivo tiene un proyecto que resuena con nuestra línea curatorial, nos encantaría conocerlo.</p>
+                <h2 className="verde-olivo font-bold text-[35.2px] text-center">¿Quieres ser parte de la programación de S7PTIMO?</h2>
+                <p className="text-[18.4px] text-center">Programamos propuestas escénicas contemporáneas que exploren nuevos lenguajes, investigaciones y formas de relacionarse con el hecho escénico. Si tu obra o la de tu compañía dialoga con el espíritu de nuestro espacio nos lo puedes hacer llegar por esta vía.</p>
             </div>
 
             {/* criterios de seleccion */}
@@ -244,9 +244,9 @@ const S7ptimo_P = () => {
                 </ul>
             </div> */}
 
-            <div className="flex flex-col max-w-4xl mx-auto gap-8 items-center">
-                <div className="flex flex-row max-w-4xl mx-auto text-[18.4px] mt-8">
-                    <p><span className="font-bold">Proceso: </span><span>Recibimos propuestas de forma continua. El equipo curatorial revisa todas las solicitudes y contacta a los proyectos seleccionados para seguimiento y programación.</span></p>
+            <div className="flex flex-col max-w-6xl mx-auto gap-8 items-center">
+                <div className="flex flex-row max-w-6xl mx-auto text-[18.4px] mt-8 text-center">
+                    <p><span className="font-bold">Proceso de programación: </span><span>Realizamos de manera continua un trabajo de scouting y desarrollamos parte de nuestra programación por invitación directa. Al mismo tiempo, permanecemos abiertos a recibir propuestas. El equipo curatorial revisa cada proyecto y se pondrá en contacto con aquellos que puedan integrarse a la programación en construcción.</span></p>
                 </div>
                 <button onClick={() => handleNavigate("/Contacto")} className="text-white font-bold bg-naranja rounded py-4 px-10 max-w-60 bg-naranja-oscuro hover:-translate-y-1 transition duration-300">Enviar Propuesta</button>
             </div>

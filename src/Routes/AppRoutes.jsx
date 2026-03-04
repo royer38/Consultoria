@@ -1,7 +1,5 @@
 import { Route, Routes } from "react-router-dom"
 import Home from "../Pages/Home"
-import Header from "../Components/Header"
-import Footer from "../Components/Footer"
 import MainLayout from "../Layouts/MainLayout"
 import Contacto from "../Pages/Contacto"
 import NuestroEquipo from "../Pages/NuestroEquipo"

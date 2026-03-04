@@ -5,8 +5,11 @@ const Servicios = () => {
   return (
     <article>
         <section className="bg-verde-olivo py-24 text-center">
-            <h1 className="text-white font-bold text-5xl">Nuestros Servicios</h1>
-            <p className="text-white text-[19.2px] mt-10">Acompañamos a artistas, compañías, festivales, instituciones y gobiernos en el desarrollo y profesionalización de sus iniciativas</p>
+            <h1 className="text-white font-bold text-5xl">¿No estás seguro qué servicio necesitas?</h1>
+            <p className="text-white text-[19.2px] mt-10">Preséntanos tu proyecto y te ayudamos a identificar de qué manera podrías alcanzar tus objetivos.</p>
+                <button onClick={HandleSesionExploratoria} className="bg-[#E85D04] text-white font-bold px-10 py-4 rounded-lg hover:-translate-y-1 hover:bg-[#c94e03] transition duration-300 hover:cursor-pointer mt-10">
+                Agenda una sesión de diagnóstico gratuita.
+                </button>        
         </section>
 
         <section className="py-24 max-w-6xl mx-auto">

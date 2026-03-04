@@ -37,6 +37,17 @@ const ResultadosRecientes = () => {
                         Acompañamiento personalizado a artistas para postulación a <span className="naranja font-bold">Sistema de Apoyos a la Creación</span> y Premio Nacional de Ciencias y Artes.
                     </p>
             </article>
+
+            <article className="bg-gray-100 rounded-2xl shadow-sm p-10 relative h-full overflow-hidden">
+                <span className="absolute top-0 left-0 w-full h-1 bg-naranja"></span>
+                    <h3 className="text-2xl font-bold verde-olivo mb-6 min-h-18">
+                        Vinculación Internacional y Coproducción
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                    Gestión de alianzas <span className="naranja font-bold">estratégicas para el desarrollo de coproducciones </span>internacionales actualmente en curso entre Chile y Alemania, y México y Alemania. Estructuración de acuerdos de colaboración, coordinación operativa y diseño de esquemas de financiamiento compartido. Ciclo virtual de encuentros sobre residencias artísticas en Latinoamérica, enfocado en visibilizar escenarios, oportunidades y condiciones clave para la colaboración internacional.                    
+                    </p>
+            </article>
+
         </div>
     </section>
   )

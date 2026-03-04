@@ -4,7 +4,7 @@ const NuestroServicios = () => {
     <section className="mb-16">
         <div className="text-center">
         <h2 className="verde-olivo font-bold text-[40px]">Nuestros Servicios</h2>
-        <p className="text-[18.4px]">Acompañamos a artistas, compañías, instituciones y gobiernos en la profesionalización y crecimiento de sus proyectos culturales</p>
+        <p className="text-[18.4px]">Actualizar la frase: Acompañamos a artistas, compañías, festivales, instituciones y gobiernos en el desarrollo y profesionalización de sus iniciativas</p>
         </div>
     </section>
 {/* en los divs vacios puede que despues vaya una imagen, habian emojis */}
