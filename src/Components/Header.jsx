@@ -16,11 +16,6 @@ const Header = () => {
         {/* LOGO */}
         <div className="flex items-center gap-2">
           <img src={MainLogo} alt="LogoPrincipal" className="w-56 md:w-45 object-contain"/>
-          {/* <span className="naranja text-5xl">7</span>
-          <span className="text-[0.95rem] verde-olivo flex flex-col gap-0 leading-none">
-            <span>Consultoría</span>
-            <span>Cultural</span>
-          </span> */}
         </div>
 
         {/* BOTÓN HAMBURGUESA (solo mobile) */}
@@ -33,7 +28,7 @@ const Header = () => {
           <ul className="flex gap-10 verde-olivo">
             <li><NavLink to="/" className={linkClass}>Inicio</NavLink></li>
             <li><NavLink to="/Servicios" className={linkClass} >Servicios</NavLink></li>
-            <li><NavLink to="/S7PTIMO" className={linkClass}>S7PTIMO</NavLink></li>
+            {/* <li><NavLink to="/S7PTIMO" className={linkClass}>S7PTIMO</NavLink></li> */}
             <li><NavLink to="/NuestroEquipo" className={linkClass}>Equipo</NavLink></li>
             <li><NavLink to="/Contacto" className={linkClass}>Contacto</NavLink></li>
           </ul>
@@ -51,7 +46,7 @@ const Header = () => {
             <ul className="flex flex-col gap-8 text-2xl text-white font-semibold text-center">
               <li><NavLink to="/" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Inicio</NavLink></li>
               <li><NavLink to="/Servicios" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Servicios</NavLink></li>
-              <li><NavLink to="/S7PTIMO" className={linkClassMobile} onClick={() => setMenuOpen(false)}>S7PTIMO</NavLink></li>
+              {/* <li><NavLink to="/S7PTIMO" className={linkClassMobile} onClick={() => setMenuOpen(false)}>S7PTIMO</NavLink></li> */}
               <li><NavLink to="/NuestroEquipo" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Equipo</NavLink></li>
               <li><NavLink to="/Contacto" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Contacto</NavLink></li>
             </ul>

@@ -1,11 +1,15 @@
 import ILONAFOTOS7 from "../assets/ILONA FOTOS7.jpg";
 import HandleSesionExploratoria from "../Helpers/HandleSesionExploratoria";
+import ConsultoriaInstitucional from "../assets/Consultoria Institucional.png"
+import Curaduria from "../assets/CURADURIA Y PROGRAMACION.png"
+import Disenoproyecto from "../assets/Diseño de proyecto Artistico.png"
 
 const Servicios = () => {
   return (
     <article>
         <section className="bg-verde-olivo py-24 text-center">
-            <h1 className="text-white font-bold text-5xl">¿No estás seguro qué servicio necesitas?</h1>
+            <h1 className="text-5xl font-bold text-white">Contáctanos</h1>
+            <p className="text-white font-bold text-3xl mt-10">¿No estás seguro qué servicio necesitas?</p>
             <p className="text-white text-[19.2px] mt-10">Preséntanos tu proyecto y te ayudamos a identificar de qué manera podrías alcanzar tus objetivos.</p>
                 <button onClick={HandleSesionExploratoria} className="bg-[#E85D04] text-white font-bold px-10 py-4 rounded-lg hover:-translate-y-1 hover:bg-[#c94e03] transition duration-300 hover:cursor-pointer mt-10">
                 Agenda una sesión de diagnóstico gratuita.
@@ -87,17 +91,18 @@ const Servicios = () => {
             <hr className="my-20 border-gray-100 border-2" />
 
             {/* prueba para ver como se veria con diseno de imagen como baner*/}
-            <div className="mt-20">
-                <div className="w-full h-105 border-3 bg-white border-[#5C6B2F] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
+            <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-12 items-start mt-20">
+                <div className="w-full">
+                <div className="w-full h-105 border-3 bg-verde-olivo border-[#E85D04] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
                     <img className="w-full h-full object-contain rounded-2xl" src={ILONAFOTOS7} alt="DanielMiranda" draggable={false}/>
                 </div>
-            </div>
+                </div>
 
-            <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-6">
                 <h3 className="text-4xl font-bold verde-olivo">Mentoría de Movilidad Internacional</h3>
                 <div className="flex flex-col gap-5 text-gray-700 leading-relaxed text-[16.8px]">
                     <p>
-                    Programa intensivo para proyectos escénicos que buscan dialogar con circuitos nacionales e internacionales. Vinculación con festivales y redes de programación.
+                    Programa intensivo para proyectos escénicos que buscan dialogar con circuitos nacionales e internacionales. Vinculación con festivales y redes de programación.                    
                     </p>
                 </div>
 
@@ -146,11 +151,12 @@ const Servicios = () => {
                 </ul>
                 </div> */}
 
-                 <div className="mt-6  flex flex-col sm:flex-row gap-6">
+                 <div className="mt-6 flex flex-col sm:flex-row gap-6">
                 <button onClick={HandleSesionExploratoria} className="bg-[#E85D04] text-white font-bold px-10 py-4 rounded-lg hover:-translate-y-1 hover:bg-[#c94e03] transition duration-300 hover:cursor-pointer">
                 agendar sesión exploratoria gratuita
                 </button>
             </div>
+                </div>
             </div>
 
             <hr className="my-20 border-gray-100 border-2" />
@@ -158,7 +164,7 @@ const Servicios = () => {
             <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-12 items-start mt-20">
                 <div className="w-full">
                 <div className="w-full h-105 border-3 bg-verde-olivo border-[#E85D04] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
-                    <img className="w-full h-full object-contain rounded-2xl" src={ILONAFOTOS7} alt="DanielMiranda" draggable={false}/>
+                    <img className="w-full h-full object-contain rounded-2xl" src={ConsultoriaInstitucional} alt="DanielMiranda" draggable={false}/>
                 </div>
                 </div>
 
@@ -226,20 +232,21 @@ const Servicios = () => {
             {/* divisor */}
             <hr className="my-20 border-gray-100 border-2" />
 
-            <div className="mt-20">
-                <div className="w-full h-105 border-3 bg-white border-[#5C6B2F] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
-                    <img className="w-full h-full object-contain rounded-2xl" src={ILONAFOTOS7} alt="DanielMiranda" draggable={false}/>
+            <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-12 items-start mt-20">
+                <div className="w-full">
+                <div className="w-full h-105 border-3 bg-verde-olivo border-[#E85D04] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
+                    <img className="w-full h-full object-contain rounded-2xl" src={Disenoproyecto} alt="DanielMiranda" draggable={false}/>
                 </div>
-            </div>
+                </div>
 
-            <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-6">
                 <h3 className="text-4xl font-bold verde-olivo">Diseño de Proyecto Artístico</h3>
                 <div className="flex flex-col gap-5 text-gray-700 leading-relaxed text-[16.8px]">
                     <p>
                     Proceso de acompañamiento dramatúrgico de propuestas escénicas y multidisciplinarias, construcción conceptual, estructura narrativa y coherencia estética.
                     </p>
                     <div className="bg-naranja flex flex-col items-center max-w-full text-center py-8 rounded-xl gap-3">
-                    <p className="text-white font-bold text-2xl">📢 Próxima Convocatoria 2026</p>
+                    <p className="text-white font-bold text-2xl">📢  Próxima Convocatoria 2026</p>
                     <p className="text-white text-[17.6px]">Segunda edición del programa | Lanzamiento: Marzo 2026</p>
                     <button className="bg-white max-w-sm naranja font-bold py-3 px-8 hover:-translate-y-1 hover:bg-[#F5F5F5] rounded transition duration-300 hover:cursor-pointer">Quiero ser notificado</button>
                 </div>
@@ -269,29 +276,34 @@ const Servicios = () => {
 
                 <li className="flex gap-4">
                     <span className="text-[#E85D04] font-bold text-lg">✓</span>
-                    <span>Definición de formatos y proceso artístico.</span>
+                    <span>Análisis de pertinencia y oportunidad cultural.</span>
                 </li>
 
                 <li className="flex gap-4">
                     <span className="text-[#E85D04] font-bold text-lg">✓</span>
-                    <span>Diseño de narrativa para dossier y presentaciones.</span>
+                    <span>Definición de formatos y proceso artístico.</span>
                 </li>
 
                  <li className="flex gap-4">
+                    <span className="text-[#E85D04] font-bold text-lg">✓</span>
+                    <span>Diseño de narrativa para dossier y presentaciones.</span>
+                </li>
+
+                <li className="flex gap-4">
                     <span className="text-[#E85D04] font-bold text-lg">✓</span>
                     <span>Diseño de proyección estratégica y sostenibilidad.</span>
                 </li>
 
                 <li className="flex gap-4">
                     <span className="text-[#E85D04] font-bold text-lg">✓</span>
-                    <span>Definición de visión artística. </span>
+                    <span>Definición de visión artística.</span>
                 </li>
 
                 </ul>
                 </div>
 
                 <div className="bg-gray-100 rounded-xl flex flex-col max-w-full gap-4 py-8 mt-8 px-8">
-                <p className="verde-olivo font-bold text-[20.8px]">Resultados 2025</p>
+                    <p class="verde-olivo font-bold text-[20.8px]">Resultados 2025</p>
                 <div className="text-[17.6]">
                     <span className="font-bold">10 compañías mexicanas</span>{" "}
                     <span>acompañadas exitosamente en procesos de movilidad internacional, logrando vínculos con festivales y espacios en</span>{" "}
@@ -299,11 +311,12 @@ const Servicios = () => {
                 </div>
                 </div>
 
-                <div className="mt-6  flex flex-col sm:flex-row gap-6">
+                 <div className="mt-6 flex flex-col sm:flex-row gap-6">
                 <button className="bg-[#E85D04] text-white font-bold px-10 py-4 rounded-lg hover:-translate-y-1 hover:bg-[#c94e03] transition duration-300 hover:cursor-pointer">
                 Solicitar asesoría
                 </button>
             </div>
+                </div>
             </div>
 
             {/* divisor */}
@@ -380,13 +393,14 @@ const Servicios = () => {
             {/* divisor */}
             <hr className="my-20 border-gray-100 border-2" />
 
-            <div className="mt-20">
-                <div className="w-full h-105 border-3 bg-white border-[#5C6B2F] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
-                    <img className="w-full h-full object-contain rounded-2xl" src={ILONAFOTOS7} alt="DanielMiranda" draggable={false}/>
+            <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-12 items-start mt-20">
+                <div className="w-full">
+                <div className="w-full h-105 border-3 bg-verde-olivo border-[#E85D04] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
+                    <img className="w-full h-full object-contain rounded-2xl" src={Curaduria} alt="DanielMiranda" draggable={false}/>
                 </div>
-            </div>
+                </div>
 
-            <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-6">
                 <h3 className="text-4xl font-bold verde-olivo">Curaduría y Programación</h3>
                 <div className="flex flex-col gap-5 text-gray-700 leading-relaxed text-[16.8px]">
                     <p>
@@ -439,6 +453,7 @@ const Servicios = () => {
                 agendar sesión exploratoria gratuita
                 </button>
             </div>
+                </div>
             </div>
 
         </section>

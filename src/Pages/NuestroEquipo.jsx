@@ -1,5 +1,6 @@
-import DanielMIranda from "../assets/DanielMiranda.jpeg";
+import DanielMIranda from "../assets/DanielMiranda2.jpg";
 import IlonaGoyeneche from "../assets/IlonaGoyeneche.jpg";
+import SheilaFlores from "../assets/SheilaFlores.jpeg"
 import useHandleNavigateTop from "../Hooks/useHandleNavigateTop";
 
 const NuestroEquipo = () => {
@@ -96,7 +97,7 @@ const NuestroEquipo = () => {
             <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-12 items-start mt-20">
                 <div className="w-full">
                 <div className="bg-verde-olivo rounded-2xl w-full h-105 flex items-center justify-center">
-                    <span className="text-white/40 text-7xl">👤</span>
+                    <img className="w-full h-full object-cover rounded-2xl" src={SheilaFlores} alt="DanielMiranda" draggable={false}/>
                 </div>
                 </div>
 
