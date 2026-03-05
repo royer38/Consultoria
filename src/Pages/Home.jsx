@@ -1,5 +1,3 @@
-import React from 'react'
-import Header from '../Components/Header'
 import Hero from '../Seccions/Hero'
 import Diferenciador from '../Seccions/Diferenciador'
 import NuestroServicios from '../Seccions/NuestroServicios'

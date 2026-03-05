@@ -3,6 +3,42 @@ import NuestrasRedes from "../Seccions/NuestrasRedes"
 const Contacto = () => {
   const LinkedIn_Link = "https://www.linkedin.com/company/7-consultor%C3%ADa-cultural/posts?lipi=urn%3Ali%3Apa[…]_page_posts_published%3B11579e87-81c2-463b-b732-fb2e147fa7a3";
   const Instagram_Link = "https://www.instagram.com/7consultoriacultural?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+  const paises = [
+"Afganistán","Albania","Alemania","Andorra","Angola","Antigua y Barbuda",
+"Arabia Saudita","Argelia","Argentina","Armenia","Australia","Austria",
+"Azerbaiyán","Bahamas","Bangladés","Barbados","Baréin","Bélgica","Belice",
+"Benín","Bielorrusia","Birmania","Bolivia","Bosnia y Herzegovina",
+"Botsuana","Brasil","Brunéi","Bulgaria","Burkina Faso","Burundi",
+"Bután","Cabo Verde","Camboya","Camerún","Canadá","Catar",
+"Chad","Chile","China","Chipre","Colombia","Comoras","Corea del Norte",
+"Corea del Sur","Costa de Marfil","Costa Rica","Croacia","Cuba",
+"Dinamarca","Dominica","Ecuador","Egipto","El Salvador",
+"Emiratos Árabes Unidos","Eritrea","Eslovaquia","Eslovenia","España",
+"Estados Unidos","Estonia","Esuatini","Etiopía","Filipinas","Finlandia",
+"Fiyi","Francia","Gabón","Gambia","Georgia","Ghana","Granada",
+"Grecia","Guatemala","Guyana","Guinea","Guinea-Bisáu","Guinea Ecuatorial",
+"Haití","Honduras","Hungría","India","Indonesia","Irak","Irán","Irlanda",
+"Islandia","Israel","Italia","Jamaica","Japón","Jordania","Kazajistán",
+"Kenia","Kirguistán","Kiribati","Kuwait","Laos","Lesoto","Letonia",
+"Líbano","Liberia","Libia","Liechtenstein","Lituania","Luxemburgo",
+"Madagascar","Malasia","Malaui","Maldivas","Malí","Malta","Marruecos",
+"Islas Marshall","Mauricio","Mauritania","México","Micronesia",
+"Moldavia","Mónaco","Mongolia","Montenegro","Mozambique","Namibia",
+"Nauru","Nepal","Nicaragua","Níger","Nigeria","Noruega","Nueva Zelanda",
+"Omán","Países Bajos","Pakistán","Palaos","Panamá","Papúa Nueva Guinea",
+"Paraguay","Perú","Polonia","Portugal","Reino Unido",
+"República Centroafricana","República Checa",
+"República Democrática del Congo","República del Congo",
+"República Dominicana","Ruanda","Rumanía","Rusia",
+"San Cristóbal y Nieves","San Marino","San Vicente y las Granadinas",
+"Santa Lucía","Santo Tomé y Príncipe","Senegal","Serbia","Seychelles",
+"Sierra Leona","Singapur","Siria","Somalia","Sri Lanka","Sudáfrica",
+"Sudán","Sudán del Sur","Suecia","Suiza","Surinam","Tailandia",
+"Tanzania","Tayikistán","Timor Oriental","Togo","Tonga",
+"Trinidad y Tobago","Túnez","Turkmenistán","Turquía","Tuvalu",
+"Ucrania","Uganda","Uruguay","Uzbekistán","Vanuatu",
+"Vaticano","Venezuela","Vietnam","Yemen","Yibuti","Zambia","Zimbabue"
+];
 
   return (
     <article>
@@ -32,9 +68,11 @@ const Contacto = () => {
                 <label htmlFor="Pais" className="verde-olivo font-bold">País / Región <span className="naranja">*</span></label>
                 <select className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" name="Pais" id="Pais" required>
                   <option value="">Selecciona una opción</option>
-                  <option value="Mexico">Mexico</option>
-                  <option value="Chile">Chile</option>
-                  <option value="Peru">Peru</option>
+                  {paises.map((pais) => (
+                    <option key={pais} value={pais}>
+                      {pais}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div className="grid grid-cols-1 gap-3">
@@ -95,7 +133,6 @@ const Contacto = () => {
                 <div className="text-white font-bold grid grid-cols-1 md:grid-cols-3 gap-3 justify-items-start max-w-md">
                   <a className="bg-verde-olivo px-6 py-3 rounded hover:bg-[#7A8B4A] transition duration-300" href={LinkedIn_Link} target="_blank" rel="noopener noreferrer">LinkedIn</a>
                   <a className="bg-verde-olivo px-6 py-3 rounded hover:bg-[#7A8B4A] transition duration-300" href={Instagram_Link} target="_blank" rel="noopener noreferrer">Instagram</a>
-                  <a className="bg-verde-olivo px-6 py-3 rounded hover:bg-[#7A8B4A] transition duration-300">Facebook</a>
                 </div>
             </div>
           </section>

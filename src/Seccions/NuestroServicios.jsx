@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const NuestroServicios = () => {
   return (
     <section className="py-16">
@@ -14,48 +16,48 @@ const NuestroServicios = () => {
           <div className="text-3xl mb-6"></div>
           <h3 className="verde-olivo font-bold text-2xl leading-snug mb-6">Asesoría Personalizada para Artistas</h3>
           <p className="text-gray-700 leading-relaxed mb-10">Acompañamiento integral en diseño, desarrollo y postulación de proyectos a convocatorias públicas y privadas.</p>
-          <button className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
-          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</button>
+          <Link to="/Servicios#Asesoria" className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
+          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</Link>
         </article>
 
         <article className="bg-white rounded-2xl p-10 h-full border-2 border-[#F5F5F5] hover:border-[#E85D04] transition-all duration-300 hover:-translate-y-1">
           <div className="text-3xl mb-6"></div>
           <h3 className="verde-olivo font-bold text-2xl leading-snug mb-6">Mentoría de Movilidad Internacional</h3>
           <p className="text-gray-700 leading-relaxed mb-10">Programa intensivo para proyectos escénicos que buscan dialogar con  circuitos nacionales e internacionales. Vinculación con festivales y redes de programación.</p>
-          <button className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
-          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</button>
+          <Link to="/Servicios#Mentoria" className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
+          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</Link>
         </article>
 
         <article className="bg-white rounded-2xl p-10 h-full border-2 border-[#F5F5F5] hover:border-[#E85D04] transition-all duration-300 hover:-translate-y-1">
           <div className="text-3xl mb-6"></div>
           <h3 className="verde-olivo font-bold text-2xl leading-snug mb-6">Consultoría Institucional</h3>
           <p className="text-gray-700 leading-relaxed mb-10">Servicios especializados para instancias públicas que buscan profesionalizar procesos y fortalecer su impacto cultural. Incluye capacitación para equipos en gestión, producción y políticas culturales</p>
-          <button className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
-          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</button>
+          <Link to="/Servicios#Consultoria" className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
+          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</Link>
         </article>
 
         <article className="bg-white rounded-2xl p-10 h-full border-2 border-[#F5F5F5] hover:border-[#E85D04] transition-all duration-300 hover:-translate-y-1">
           <div className="text-3xl mb-6"></div>
           <h3 className="verde-olivo font-bold text-2xl leading-snug mb-6">Diseño de Proyecto Artístico</h3>
           <p className="text-gray-700 leading-relaxed mb-10">Proceso de acompañamiento dramatúrgico de propuestas escénicas y multidisciplinarias, construcción conceptual, estructura narrativa y coherencia estética.</p>
-          <button className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
-          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</button>
+          <Link to="/Servicios#Diseno" className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
+          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</Link>
         </article>
 
           <article className="bg-white rounded-2xl p-10 h-full border-2 border-[#F5F5F5] hover:border-[#E85D04] transition-all duration-300 hover:-translate-y-1">
           <div className="text-3xl mb-6"></div>
           <h3 className="verde-olivo font-bold text-2xl leading-snug mb-6">Producción Escénica</h3>
           <p className="text-gray-700 leading-relaxed mb-10">Proceso integral de planificación, gestión, coordinación y ejecución de un proyecto escénico. Implica convertir una propuesta artística en una experiencia escénica concreta, viable y sustentable.</p>
-          <button className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
-          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</button>
+          <Link to="/Servicios#Produccion" className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
+          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</Link>
         </article>
 
           <article className="bg-white rounded-2xl p-10 h-full border-2 border-[#F5F5F5] hover:border-[#E85D04] transition-all duration-300 hover:-translate-y-1">
           <div className="text-3xl mb-6"></div>
           <h3 className="verde-olivo font-bold text-2xl leading-snug mb-6">Curaduría y Programación</h3>
           <p className="text-gray-700 leading-relaxed mb-10">Diseño y planeación de líneas curatoriales y programación artística para festivales, ciclos y espacios culturales que dialoguen con contextos territoriales, públicos específicos y objetivos institucionales</p>
-          <button className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
-          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</button>
+          <Link to="/Servicios#Curaduria" className="border-2 border-verde-olivo verde-olivo font-bold px-8 py-3 rounded-md
+          transition-all duration-300 hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer">Ver más</Link>
         </article>
 
       </div>

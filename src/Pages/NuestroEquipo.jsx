@@ -80,11 +80,6 @@ const NuestroEquipo = () => {
 
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10 pt-3">
                     <div className="flex items-center gap-3">
-                    <span className="naranja text-xl">📞</span>
-                    <span className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">+52 656 101 2488</span>
-                    </div>
-
-                    <div className="flex items-center gap-3">
                     <span className="naranja text-xl">✉️</span>
                     <a href={`mailto:mirandacanodaniel@gmail.com`} className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">mirandacanodaniel@gmail.com</a>
                     </div>
@@ -148,11 +143,6 @@ const NuestroEquipo = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10 pt-3">
-                    <div className="flex items-center gap-3">
-                    <span className="naranja text-xl">📞</span>
-                    <span className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">+52 55 7610 7332</span>
-                    </div>
-
                     <div className="flex items-center gap-3">
                     <span className="naranja text-xl">✉️</span>
                     <a href={`mailto:sheilatalking@gmail.com`} className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">sheilatalking@gmail.com</a>
@@ -219,11 +209,6 @@ const NuestroEquipo = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10 pt-3">
-                    <div className="flex items-center gap-3">
-                    <span className="naranja text-xl">📞</span>
-                    <span className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">+52 55 3474 2139</span>
-                    </div>
-
                     <div className="flex items-center gap-3">
                     <span className="naranja text-xl">✉️</span>
                     <a href={`mailto:ilonagoyeneche@gmail.com`} className="verde-olivo font-semibold hover:text-[#E85D04] transition duration-300 hover:cursor-pointer">ilonagoyeneche@gmail.com</a>

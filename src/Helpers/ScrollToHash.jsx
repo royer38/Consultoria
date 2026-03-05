@@ -7,8 +7,16 @@ const ScrollToHash = () => {
   useEffect(() => {
     if (hash) {
       const element = document.getElementById(hash.replace("#", ""))
+
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" })
+        const headerOffset = 120 // altura de tu header
+        const elementPosition = element.getBoundingClientRect().top
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        })
       }
     }
   }, [hash])
