@@ -8,8 +8,7 @@ const Servicios = () => {
   return (
     <article>
         <section className="bg-verde-olivo py-24 text-center">
-            <h1 className="text-5xl font-bold text-white">Contáctanos</h1>
-            <p className="text-white font-bold text-3xl mt-10">¿No estás seguro qué servicio necesitas?</p>
+            <h1 className="text-5xl font-bold text-white">Nuestros Servicios</h1>
             <p className="text-white text-[19.2px] mt-10">Preséntanos tu proyecto y te ayudamos a identificar de qué manera podrías alcanzar tus objetivos.</p>
                 <button onClick={HandleSesionExploratoria} className="bg-[#E85D04] text-white font-bold px-10 py-4 rounded-lg hover:-translate-y-1 hover:bg-[#c94e03] transition duration-300 hover:cursor-pointer mt-10">
                 Agenda una sesión de diagnóstico gratuita.
