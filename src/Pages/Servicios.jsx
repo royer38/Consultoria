@@ -3,6 +3,9 @@ import HandleSesionExploratoria from "../Helpers/HandleSesionExploratoria";
 import ConsultoriaInstitucional from "../assets/Consultoria Institucional.png"
 import Curaduria from "../assets/CURADURIA Y PROGRAMACION.png"
 import Disenoproyecto from "../assets/Diseño de proyecto Artistico.png"
+import AsesoriaArtistas from "../assets/Asesoria Artistas.png"
+import MentoriaMovilidad from "../assets/Mentoria de Movilidad.png"
+import ProduccionEscenica from "../assets/Produccion Escenica.png"
 
 const Servicios = () => {
   return (
@@ -22,7 +25,7 @@ const Servicios = () => {
             <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-12 items-start mt-20" id="Asesoria">
                 <div className="w-full">
                 <div className="w-full h-105 border-3 bg-verde-olivo border-[#E85D04] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
-                    <img className="w-full h-full object-contain rounded-2xl" src={ILONAFOTOS7} alt="DanielMiranda" draggable={false}/>
+                    <img className="w-full h-full object-contain rounded-2xl" src={AsesoriaArtistas} alt="DanielMiranda" draggable={false}/>
                 </div>
                 </div>
 
@@ -93,7 +96,7 @@ const Servicios = () => {
             <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-12 items-start mt-20" id="Mentoria">
                 <div className="w-full">
                 <div className="w-full h-105 border-3 bg-verde-olivo border-[#E85D04] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
-                    <img className="w-full h-full object-contain rounded-2xl" src={ILONAFOTOS7} alt="DanielMiranda" draggable={false}/>
+                    <img className="w-full h-full object-contain rounded-2xl" src={MentoriaMovilidad} alt="DanielMiranda" draggable={false}/>
                 </div>
                 </div>
 
@@ -110,7 +113,7 @@ const Servicios = () => {
                     </div>
 
                 <div className="bg-gray-100 rounded-xl flex flex-col max-w-full gap-4 py-8 mt-8 px-8">
-                    <p class="verde-olivo font-bold text-[20.8px]">Resultados 2025</p>
+                    <p className="verde-olivo font-bold text-[20.8px]">Resultados 2025</p>
                 <div className="text-[17.6]">
                     <span className="font-bold">10 compañías mexicanas</span>{" "}
                     <span>acompañadas exitosamente en procesos de movilidad internacional, logrando vínculos con festivales y espacios en</span>{" "}
@@ -324,7 +327,7 @@ const Servicios = () => {
             <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-12 items-start mt-20" id="Produccion">
                 <div className="w-full">
                 <div className="w-full h-105 border-3 bg-verde-olivo border-[#E85D04] rounded-2xl flex items-center justify-center shrink-0 mx-auto sm:mx-0">
-                    <img className="w-full h-full object-contain rounded-2xl" src={ILONAFOTOS7} alt="DanielMiranda" draggable={false}/>
+                    <img className="w-full h-full object-contain rounded-2xl" src={ProduccionEscenica} alt="DanielMiranda" draggable={false}/>
                 </div>
                 </div>
 

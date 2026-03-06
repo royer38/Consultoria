@@ -1,3 +1,4 @@
+import { useState } from "react";
 import NuestrasRedes from "../Seccions/NuestrasRedes"
 
 const Contacto = () => {
@@ -40,6 +41,59 @@ const Contacto = () => {
 "Vaticano","Venezuela","Vietnam","Yemen","Yibuti","Zambia","Zimbabue"
 ];
 
+  const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
+  const [numero, setNumero] = useState("");
+  const [pais, setPais] = useState("");
+  const [consulta, setConsulta] = useState("");
+  const [otroTipoConsulta, setOtroTipoConsulta] = useState("");
+  const [mensaje, setMensaje] = useState("");
+  const [comunicacion, setComunicacion] = useState("");
+  const tipoConsultaFinal = consulta === "otro" ? otroTipoConsulta : consulta;
+  const formularioCompleto =
+    nombre.trim() !== "" &&
+    email.trim() !== "" &&
+    pais.trim() !== "" &&
+    tipoConsultaFinal.trim() !== "" &&
+    mensaje.trim() !== "" &&
+    comunicacion
+
+    const enviarCorreo = (e) => {
+    e.preventDefault();
+    const tipoConsultaFinal = consulta === "otro" ? otroTipoConsulta : consulta;
+    if (!nombre || !email || !pais || !consulta || !mensaje || !comunicacion){
+      alert("Por favor completa todos los campos obligatorios.")
+      return
+    }
+
+    const subject = `Nueva consulta desde el sitio web - ${tipoConsultaFinal}`
+    const body = `Estimado equipo de 7 Consultoría Cultural,
+
+      Mi nombre es ${nombre} y me pongo en contacto con ustedes a través de su sitio web para solicitar información sobre sus servicios.
+
+      Tipo de consulta: ${tipoConsultaFinal}
+
+      Mensaje:
+      ${mensaje}
+
+      Datos de contacto:
+      Nombre: ${nombre}
+      Correo electrónico: ${email}
+      Teléfono: ${numero || "No proporcionado"}
+      País / Región: ${pais}
+
+      ${comunicacion ? "He aceptado recibir comunicaciones por parte de 7 Consultoría Cultural." : ""}
+
+      Quedo atento(a) a su respuesta.
+
+      Saludos cordiales,
+
+      ${nombre}
+      `
+   const mailtoLink = `mailto:7consultoriacultural@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.location.href = mailtoLink
+  }
+
   return (
     <article>
         <section className="bg-verde-olivo text-white text-center py-24">
@@ -54,19 +108,19 @@ const Contacto = () => {
             <form action="" className="">
               <div className="grid grid-cols-1 gap-3">
                 <label htmlFor="Nombre" className="verde-olivo font-bold">Nombre completo <span className="naranja">*</span></label>
-                <input className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" type="text" name="Nombre" id="Nombre" required/>
+                <input className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" type="text" name="Nombre" id="Nombre" required value={nombre} onChange={(e) => setNombre(e.target.value)}/>
               </div>
               <div className="grid grid-cols-1 gap-3">
                 <label htmlFor="Correo" className="verde-olivo font-bold">Correo electrónico <span className="naranja">*</span></label>
-                <input className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" type="email" name="Correo" id="Correo" required/>
+                <input className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" type="email" name="Correo" id="Correo" required value={email} onChange={(e) => setEmail(e.target.value)}/>
               </div>
               <div className="grid grid-cols-1 gap-3">
                 <label htmlFor="Telefono" className="verde-olivo font-bold">Teléfono</label>
-                <input className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" type="text" name="Telefono" id="Telefono"/>
+                <input className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" type="text" name="Telefono" id="Telefono" value={numero} onChange={(e) => setNumero(e.target.value)}/>
               </div>
               <div className="grid grid-cols-1 gap-3">
                 <label htmlFor="Pais" className="verde-olivo font-bold">País / Región <span className="naranja">*</span></label>
-                <select className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" name="Pais" id="Pais" required>
+                <select className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" name="Pais" id="Pais" required value={pais} onChange={(e) => setPais(e.target.value)}>
                   <option value="">Selecciona una opción</option>
                   {paises.map((pais) => (
                     <option key={pais} value={pais}>
@@ -77,26 +131,33 @@ const Contacto = () => {
               </div>
               <div className="grid grid-cols-1 gap-3">
                 <label htmlFor="Consulta" className="verde-olivo font-bold">Tipo de consulta <span className="naranja">*</span></label>
-                <select className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" name="Consulta" id="Consulta" required>
+                <select className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" name="Consulta" id="Consulta" required value={consulta} onChange={(e) => setConsulta(e.target.value)}>
                   <option value="">Selecciona una opción</option>
-                  <option value="asesoria">Asesoría para artistas</option>
-                  <option value="mentoria">Mentoría de movilidad</option>
-                  <option value="consultoria">Consultoría institucional</option>
-                  <option value="capacitacion">Capacitación</option>
-                  <option value="s7ptimo">S7PTIMO</option>
+                  <option value="Asesoría para artistas">Asesoría para artistas</option>
+                  <option value="Mentoría de movilidad">Mentoría de movilidad</option>
+                  <option value="Consultoría institucional">Consultoría institucional</option>
+                  <option value="Capacitación">Capacitación</option>
+                  <option value="S7PTIMO">S7PTIMO</option>
                   <option value="otro">Otro</option>
                 </select>
               </div>
+              {consulta === "otro" && (
+              <div className="grid grid-cols-1 gap-3">
+                <label htmlFor="Tipo_Consulta" className="font-bold verde-olivo">Ingrese su tipo de consulta <span className="naranja">*</span></label>
+                <input className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" type="text" name="Tipo_Consulta" id="Tipo_Consulta" required value={otroTipoConsulta} onChange={(e) => setOtroTipoConsulta(e.target.value)}/>
+              </div>)}
               <div className="grid grid-cols-1 gap-3">
                 <label htmlFor="Mensaje" className="font-bold verde-olivo">Mensaje <span className="naranja">*</span></label>
-                <textarea className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" name="Mensaje" id="Mensaje" placeholder="Cuéntanos sobre tu proyecto o consulta..." rows={5} required></textarea>
+                <textarea className="border-2 border-gray-200 p-3.5 rounded focus:border-[#E85D04] focus:ring-2 focus:ring-[#E85D04]/0 focus:outline-none transition" name="Mensaje" id="Mensaje" placeholder="Cuéntanos sobre tu proyecto o consulta..." rows={5} required value={mensaje} onChange={(e) => setMensaje(e.target.value)}></textarea>
               </div>
               <div className="flex items-center gap-3 mt-6">
-                <input type="checkbox" name="Comunicaciones" id="Comunicaciones" required/>
+                <input type="checkbox" name="Comunicaciones" id="Comunicaciones" required checked={comunicacion} onChange={(e) => setComunicacion(e.target.checked)}/>
                 <label htmlFor="Comunicaciones" className="text-gray-600">Acepto recibir comunicaciones de 7 Consultoría Cultural <span className="naranja">*</span></label>
               </div>
               <div className="mt-5">
-                <button className="bg-naranja py-4 px-11 hover:cursor-pointer rounded text-white font-bold bg-naranja-oscuro hover:-translate-y-1 transition duration-300">Enviar solicitud</button>
+                <button onClick={enviarCorreo} disabled={!formularioCompleto} className={`px-10 py-4 rounded-lg font-bold text-white transition
+                  ${formularioCompleto ? "bg-[#E85D04] hover:bg-[#c94e03] hover:-translate-y-1 cursor-pointer"
+                    : "bg-gray-400 cursor-not-allowed"}`}>Enviar solicitud</button>
               </div>
             </form>
           </section>

@@ -1,6 +1,6 @@
 import DanielMIranda from "../assets/DanielMiranda2.jpg";
 import IlonaGoyeneche from "../assets/IlonaGoyeneche.jpg";
-import SheilaFlores from "../assets/SheilaFlores.jpeg"
+import SheilaFlores from "../assets/SheilaFlores.png"
 import useHandleNavigateTop from "../Hooks/useHandleNavigateTop";
 
 const NuestroEquipo = () => {
