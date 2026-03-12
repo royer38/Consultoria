@@ -34,21 +34,21 @@ const Footer = () => {
                     <div className="flex flex-col gap-5">
                         <h4 className="font-bold text-lg">Servicios</h4>
                         <ul className="flex flex-col gap-3 text-white/90">
-                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/Servicios#Asesoria">Asesoría Personalizada para Artistas</Link></li>
-                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/Servicios#Mentoria">Mentoría de Movilidad Internacional</Link></li>
-                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/Servicios#Consultoria">Consultoría Institucional</Link></li>
-                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/Servicios#Diseno">Diseño de Proyecto Artístico</Link></li>
-                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/Servicios#Produccion">Producción Escénica</Link></li>
-                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/Servicios#Curaduria">Curaduría y Programación</Link></li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/servicios#Asesoria">Asesoría Personalizada para Artistas</Link></li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/servicios#Mentoria">Mentoría de Movilidad Internacional</Link></li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/servicios#Consultoria">Consultoría Institucional</Link></li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/servicios#Diseno">Diseño de Proyecto Artístico</Link></li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/servicios#Produccion">Producción Escénica</Link></li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><Link to="/servicios#Curaduria">Curaduría y Programación</Link></li>
                         </ul>
                     </div>
                     {/* columna 3 */}
                     <div className="flex flex-col gap-5">
                         <h4 className="font-bold text-lg">Empresa</h4>
                         <ul className="flex flex-col gap-3 text-white/90">
-                        <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/NuestroEquipo")}>Equipo</button></li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/nuestroEquipo")}>Equipo</button></li>
                         {/* <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/S7PTIMO")}>S7PTIMO</button></li> */}
-                        <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/Contacto")}>Contacto</button></li>
+                        <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/contacto")}>Contacto</button></li>
                         <li className="hover:text-[#E85D04] transition duration-300">Aviso de Privacidad</li>
                         </ul>
                     </div>

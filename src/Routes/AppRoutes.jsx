@@ -12,10 +12,10 @@ const AppRoutes = () => {
     <Routes>
       <Route element={<MainLayout/>}>
         <Route path="/" element={<Home/>}/>
-        <Route path="/Contacto" element={<Contacto/>}/>
-        <Route path="/NuestroEquipo" element={<NuestroEquipo/>}/>
+        <Route path="/contacto" element={<Contacto/>}/>
+        <Route path="/nuestroequipo" element={<NuestroEquipo/>}/>
         {/* <Route path="/S7PTIMO" element={<S7ptimo_P/>}/> */}
-        <Route path="/Servicios" element={<Servicios/>}/>
+        <Route path="/servicios" element={<Servicios/>}/>
         
         {/* error 404 */}
         <Route path="*" element={<h1>404 - Pagina no encontrada</h1>}/>
