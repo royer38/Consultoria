@@ -47,7 +47,7 @@ const Footer = () => {
                         <h4 className="font-bold text-lg">Empresa</h4>
                         <ul className="flex flex-col gap-3 text-white/90">
                         <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/nuestroEquipo")}>Equipo</button></li>
-                        {/* <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/S7PTIMO")}>S7PTIMO</button></li> */}
+                        <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/s7ptimo")}>S7PTIMO</button></li>
                         <li className="hover:text-[#E85D04] transition duration-300"><button onClick={() => handleNavigate("/contacto")}>Contacto</button></li>
                         <li className="hover:text-[#E85D04] transition duration-300">Aviso de Privacidad</li>
                         </ul>

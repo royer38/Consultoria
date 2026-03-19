@@ -56,6 +56,7 @@ const Header = () => {
             <li><NavLink to="/" className={linkClass}>Inicio</NavLink></li>
             <li><NavLink to="/servicios" className={linkClass}>Servicios</NavLink></li>
             <li><NavLink to="/nuestroEquipo" className={linkClass}>Equipo</NavLink></li>
+            <li><NavLink to="/s7ptimo" className={linkClass}>S7ptimo</NavLink></li>
             <li><NavLink to="/contacto" className={linkClass}>Contacto</NavLink></li>
           </ul>
 
@@ -76,6 +77,7 @@ const Header = () => {
             <li><NavLink to="/" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Inicio</NavLink></li>
             <li><NavLink to="/servicios" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Servicios</NavLink></li>
             <li><NavLink to="/nuestroequipo" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Equipo</NavLink></li>
+            <li><NavLink to="/s7ptimo" className={linkClassMobile} onClick={() => setMenuOpen(false)}>S7ptimo</NavLink></li>
             <li><NavLink to="/contacto" className={linkClassMobile} onClick={() => setMenuOpen(false)}>Contacto</NavLink></li>
           </ul>
 
