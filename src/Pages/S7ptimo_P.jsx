@@ -1,8 +1,35 @@
 import { Link, useNavigate } from "react-router-dom"
 import s7ptimoLogo from "../assets/S7ptmoSeccion.png"
+import LasMujeresFacturan from "../assets/LAS MUJERES FACTURAN.png"
+import Invierno from "../assets/INVIERNO.png"
+import CloudModal from "../Components/cloudModal"
+import { useState } from "react"
 
 const S7ptimo_P = () => {
     const navigate = useNavigate();
+    const [modalData, setModalData] = useState(null);
+    const obras = [
+  {
+    title: "Las mujeres facturan",
+    image: LasMujeresFacturan,
+    sinopsis: "Martha Del Baile está lista para revelar el secreto del éxito en su esperada TEDtalk: LAS MUJERES FACTURAN. Acompañada por su asistente personal, Leydi Lupita, quien nos ofrecerá una mirada aguda, divertida y honesta sobre lo que realmente significa “triunfar” en estos tiempos. Porque ahora las mujeres facturan… pero no todas facturamos igual. Prepárate para una experiencia que cuestiona los roles de género, el éxito y la desigualdad social.",
+    horario: "20:00 hrs",
+    fechas: "28 de marzo, 4 y 11 de abril.",
+    duracion: "60 min",
+    publico: "adolescentes y adultos",
+    genero: "monólogo contemporáneo",
+  },
+  {
+    title: "Invierno",
+    image: Invierno,
+    sinopsis: "INVIERNO es un unipersonal escrito e interpretado por Cristian Lara que cuenta la historia de Daniel “El Pollo”, un joven que toma un avión por primera vez para viajar a un pequeño pueblo pesquero en el norte de Europa, entre Suecia y Finlandia. Allí vive Peps, uno de sus mejores amigos de la preparatoria, quien ahora trabaja vendiendo pescado en el mercado local. Lo que comienza como una visita se convierte poco a poco en un viaje personal: lejos de todo lo conocido, Daniel tendrá que enfrentarse a sus propias preguntas, a las decisiones que lo trajeron hasta ahí y a aquello que todavía espera de su vida. Con unas botas blancas de pescador y un escenario casi vacío —apenas un banco— el actor construye, a través de la palabra y el relato, un universo completo: aeropuertos, mercados, recuerdos de juventud, amistades que cambian con el tiempo y la sensación de empezar de nuevo en un lugar donde nadie te conoce. Dirigida por Antón Araiza y con diseño escénico de Emilio Zurita, la obra dio origen a la compañía Teatro Bajo la Lluvia, integrada por jóvenes creadores interesados en una escena directa, honesta y cercana al público. Por este trabajo, Cristian Lara fue nominado por la ACPT como Actor Revelación.",
+    horario: "20:00 hrs",
+    fechas: "6, 13, 20 y 27 de abril.",
+    duracion: "60 min",
+    publico: "adolescentes y adultos",
+    genero: "monólogo contemporáneo",
+  }
+];
 
     const handleNavigate = (url) => {
         navigate(url)
@@ -60,61 +87,23 @@ const S7ptimo_P = () => {
         <section className="py-24" id="cartelera">
             <h2 className="verde-olivo font-bold text-[40px] text-center mb-12">Cartelera Actual</h2>
             <div className="max-w-6xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 items-stretch">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 items-stretch">
                     {/* card 1 */}
                     <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">  
                         <div className="bg-verde-olivo h-80 flex items-center justify-center">
-                            <span className="text-6xl opacity-40">🎭</span>
+                            {/* <span className="text-6xl opacity-40">🎭</span> */}
+                            <img className="w-full h-full object-cover" src={LasMujeresFacturan} alt="LasMujeresFacturan_Portada"/>
                         </div>
 
                         <div className="bg-gray-100 p-8 flex flex-col h-full">
-                            <h3 className="verde-olivo font-bold text-[26px] leading-tight">El Peso de la Memoria</h3>
-                            <p className="naranja font-bold mt-2 text-[15px]">Compañía Teatral Experimental</p>
+                            <h3 className="verde-olivo font-bold text-[26px] leading-tight">Las mujeres facturan</h3>
+                            <p className="naranja font-bold mt-2 text-[15px]">Temporada 1</p>
 
                             <div className="mt-6 flex flex-col gap-3 text-[15px] text-gray-700">
                                 <div className="grid grid-cols-[22px_85px_1fr] items-start gap-3">
                                     <span className="text-center">🗓️</span>
                                     <span className="verde-olivo font-bold text-left">Fechas:</span>
-                                    <span className="text-left">Jueves a Domingos, hasta 28 Feb</span>
-                                </div>
-
-                                <div className="grid grid-cols-[22px_85px_1fr] items-start gap-3">
-                                    <span className="text-center">⏱️</span>
-                                    <span className="verde-olivo font-bold text-left">Duración:</span>
-                                    <span className="text-left">75 minutos</span>
-                                </div>
-
-                                <div className="grid grid-cols-[22px_85px_1fr] items-start gap-3">
-                                    <span className="text-center">👥</span>
-                                    <span className="verde-olivo font-bold text-left">Edad:</span>
-                                    <span className="text-left">Mayores de 15 años</span>
-                                </div>
-
-                                </div>
-                                    <p className="naranja font-bold text-[34px] mt-8">$250</p>
-
-                                <div className="flex flex-col gap-4 mt-auto">
-                                <button className="bg-naranja text-white font-bold py-4 rounded-lg bg-naranja-oscuro transition duration-300">🎫 Comprar boletos</button>
-                                <button className="border-2 border-verde-olivo verde-olivo font-bold py-4 rounded-lg hover:bg-[#5C6B2F] hover:text-white transition duration-300">Ver más información</button>
-                                </div>
-                            </div>
-                        </article>
-
-                        {/* card 2 */}
-                    <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">  
-                        <div className="bg-verde-olivo h-80 flex items-center justify-center">
-                            <span className="text-6xl opacity-40">💃</span>
-                        </div>
-
-                        <div className="p-8 flex flex-col h-full">
-                            <h3 className="verde-olivo font-bold text-[26px] leading-tight">Geografías del Cuerpo</h3>
-                            <p className="naranja font-bold mt-2 text-[15px]">Colectivo de Danza Contemporánea</p>
-
-                            <div className="mt-6 flex flex-col gap-3 text-[15px] text-gray-700">
-                                <div className="grid grid-cols-[22px_85px_1fr] items-start gap-3">
-                                    <span className="text-center">🗓️</span>
-                                    <span className="verde-olivo font-bold text-left">Fechas:</span>
-                                    <span className="text-left">Viernes y Sábados, hasta 15 Mar</span>
+                                    <span className="text-left">28 de marzo, 4 y 11 de abril.</span>
                                 </div>
 
                                 <div className="grid grid-cols-[22px_85px_1fr] items-start gap-3">
@@ -125,22 +114,66 @@ const S7ptimo_P = () => {
 
                                 <div className="grid grid-cols-[22px_85px_1fr] items-start gap-3">
                                     <span className="text-center">👥</span>
-                                    <span className="verde-olivo font-bold text-left">Edad:</span>
-                                    <span className="text-left">Todo público</span>
+                                    <span className="verde-olivo font-bold text-left">Público:</span>
+                                    <span className="text-left">adolescentes y adultos</span>
                                 </div>
 
                                 </div>
-                                    <p className="naranja font-bold text-[34px] mt-8">$200</p>
+                                    <p className="naranja font-bold text-[34px] mt-8">$300</p>
 
                                 <div className="flex flex-col gap-4 mt-auto">
-                                <button className="bg-naranja text-white font-bold py-4 rounded-lg bg-naranja-oscuro transition duration-300">🎫 Comprar boletos</button>
-                                <button className="border-2 border-verde-olivo verde-olivo font-bold py-4 rounded-lg hover:bg-[#5C6B2F] hover:text-white transition duration-300">Ver más información</button>
+                                <button className="bg-naranja text-white font-bold py-4 rounded-lg bg-naranja-oscuro transition duration-300 hover:cursor-pointer"
+                                onClick={() => window.open("https://boletopolis.com/es/eventos/buscar/S7ptimo", "_blank")}>🎫 Comprar boletos</button>
+                                <button className="border-2 border-verde-olivo verde-olivo font-bold py-4 rounded-lg hover:bg-[#5C6B2F] hover:text-white transition duration-300 hover:cursor-pointer"
+                                onClick={() => setModalData(obras[0])}>Ver más información</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        {/* card 2 */}
+                    <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">  
+                        <div className="bg-verde-olivo h-80 flex items-center justify-center">
+                            {/* <span className="text-6xl opacity-40">💃</span> */}
+                            <img className="w-full h-full object-cover" src={Invierno} alt="Invierno_Portada"/>
+                        </div>
+
+                        <div className="p-8 flex flex-col h-full">
+                            <h3 className="verde-olivo font-bold text-[26px] leading-tight">Invierno</h3>
+                            <p className="naranja font-bold mt-2 text-[15px]">Temporada 2</p>
+
+                            <div className="mt-6 flex flex-col gap-3 text-[15px] text-gray-700">
+                                <div className="grid grid-cols-[22px_85px_1fr] items-start gap-3">
+                                    <span className="text-center">🗓️</span>
+                                    <span className="verde-olivo font-bold text-left">Fechas:</span>
+                                    <span className="text-left">6, 13, 20 y 27 de abril.</span>
+                                </div>
+
+                                <div className="grid grid-cols-[22px_85px_1fr] items-start gap-3">
+                                    <span className="text-center">⏱️</span>
+                                    <span className="verde-olivo font-bold text-left">Duración:</span>
+                                    <span className="text-left">60 minutos</span>
+                                </div>
+
+                                <div className="grid grid-cols-[22px_85px_1fr] items-start gap-3">
+                                    <span className="text-center">👥</span>
+                                    <span className="verde-olivo font-bold text-left">Público:</span>
+                                    <span className="text-left">adolescentes y adultos</span>
+                                </div>
+
+                                </div>
+                                    <p className="naranja font-bold text-[34px] mt-8">$300</p>
+
+                                <div className="flex flex-col gap-4 mt-auto">
+                                <button className="bg-naranja text-white font-bold py-4 rounded-lg bg-naranja-oscuro transition duration-300 hover:cursor-pointer"
+                                onClick={() => window.open("https://boletopolis.com/es/eventos/buscar/S7ptimo", "_blank")}>🎫 Comprar boletos</button>
+                                <button className="border-2 border-verde-olivo verde-olivo font-bold py-4 rounded-lg hover:bg-[#5C6B2F] hover:text-white hover:cursor-pointer
+                                 transition duration-300" onClick={() => setModalData(obras[1])}>Ver más información</button>
                                 </div>
                             </div>
                         </article>
 
                         {/* card 3 */}
-                    <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">  
+                    {/* <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">  
                         <div className="bg-verde-olivo h-80 flex items-center justify-center">
                             <span className="text-6xl opacity-40">🎪</span>
                         </div>
@@ -176,7 +209,7 @@ const S7ptimo_P = () => {
                                 <button className="border-2 border-verde-olivo verde-olivo font-bold py-4 rounded-lg hover:bg-[#5C6B2F] hover:text-white transition duration-300">Ver más información</button>
                                 </div>
                             </div>
-                        </article>
+                    </article> */}
 
                 </div>
             </div>
@@ -252,8 +285,9 @@ const S7ptimo_P = () => {
             </div>
 
         </section>
-
+            <CloudModal key={modalData ? modalData.title : "closed"} data={modalData} onClose={() => setModalData(null)}/>
     </article>
+
   )
 }
 

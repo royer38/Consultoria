@@ -52,3 +52,19 @@
         background-color: #1A1A1A;
     }
 }
+
+    @keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(0.5deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    }
+
+    .animate-float {
+    animation: float 4s ease-in-out infinite;
+    }
