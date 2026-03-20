@@ -50,7 +50,7 @@ const S7ptimo_P = () => {
         <section className="bg-gray-100 py-24">
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 items-center">
-            
+
                 <article>
                     <h2 className="verde-olivo text-[35.2px] font-bold mb-9">Sobre el Proyecto</h2>
                     <div className="grid grid-cols-1 gap-8 text-[17.6px] text-gray-700">
@@ -89,7 +89,7 @@ const S7ptimo_P = () => {
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 items-stretch">
                     {/* card 1 */}
-                    <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">  
+                    <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">
                         <div className="bg-verde-olivo h-80 flex items-center justify-center">
                             {/* <span className="text-6xl opacity-40">🎭</span> */}
                             <img className="w-full h-full object-cover" src={LasMujeresFacturan} alt="LasMujeresFacturan_Portada"/>
@@ -131,7 +131,7 @@ const S7ptimo_P = () => {
                         </article>
 
                         {/* card 2 */}
-                    <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">  
+                    <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">
                         <div className="bg-verde-olivo h-80 flex items-center justify-center">
                             {/* <span className="text-6xl opacity-40">💃</span> */}
                             <img className="w-full h-full object-cover" src={Invierno} alt="Invierno_Portada"/>
@@ -173,7 +173,7 @@ const S7ptimo_P = () => {
                         </article>
 
                         {/* card 3 */}
-                    {/* <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">  
+                    {/* <article className="bg-gray-100 rounded-2xl shadow-sm overflow-hidden w-full max-w-105 h-full flex flex-col transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1">
                         <div className="bg-verde-olivo h-80 flex items-center justify-center">
                             <span className="text-6xl opacity-40">🎪</span>
                         </div>
@@ -216,11 +216,11 @@ const S7ptimo_P = () => {
         </section>
 
         <section className="py-24 bg-gray-100">
-            <h2 className="verde-olivo font-bold text-[40px] text-center mb-12">Próximamente</h2>
+            {/* <h2 className="verde-olivo font-bold text-[40px] text-center mb-12">Próximamente</h2>
 
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-3 place-items-center gap-8 ">
-                    {/* cards */}
+
                     <article className="bg-white rounded-2xl shadow-sm p-6 relative h-full overflow-hidden">
                         <span className="absolute top-0 left-0 w-full h-1 bg-naranja"></span>
                             <p className="verde-olivo font-bold text-[22.4px] text-center mb-4">La Casa de los Ecos</p>
@@ -245,9 +245,9 @@ const S7ptimo_P = () => {
                             <p className="text-center mb-4">Serie de performances que exploran la comunicación más allá de las palabras.</p>
                     </article>
                 </div>
-            </div>
-
-            <div className="bg-verde-olivo flex flex-col gap-5 py-15 max-w-6xl rounded-xl mx-auto mt-13">
+            </div> */}
+{/* mt-13 */}
+            <div className="bg-verde-olivo flex flex-col gap-5 py-15 max-w-6xl rounded-xl mx-auto">
                 <p className="text-center font-bold text-white text-[28.8px]">Suscríbete a nuestra programación</p>
                 <p className="text-center text-white text-[17.6px]">Recibe información de estrenos, funciones especiales y eventos exclusivos</p>
                 <form className="flex flex-col md:flex-row gap-5 mx-auto" action="">
